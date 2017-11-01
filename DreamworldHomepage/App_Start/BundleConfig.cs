@@ -26,6 +26,13 @@ namespace DreamworldHomepage
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/slick").Include(
+                      "~/Scripts/slick.js"));
+
+            bundles.Add(new StyleBundle("~/Content/slick").Include(
+                      "~/Content/slick.css",
+                      "~/Content/slick-theme.css"));
         }
     }
 }

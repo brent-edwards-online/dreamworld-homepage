@@ -224,6 +224,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\fonts\slick.svg" />
     <Content Include="Content\images\Banner\Homepage_head-banner_desktop.jpg" />
     <Content Include="Content\images\Banner\Homepage_head-banner_mobile.jpg" />
     <Content Include="Content\images\HelpMeFindTheRightTicket\icon_ticket_1 day.svg" />
@@ -241,6 +242,8 @@
     <Content Include="Content\images\WhatsGoingOn\carousel_whats-on_2.jpg" />
     <Content Include="Content\images\WhatsGoingOn\carousel_whats-on_3.jpg" />
     <Content Include="Content\images\WhatsGoingOn\carousel_whats-on_4.jpg" />
+    <Content Include="Content\slick-theme.css" />
+    <Content Include="Content\slick.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -252,6 +255,9 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\fonts\slick.eot" />
+    <Content Include="Content\fonts\slick.ttf" />
+    <Content Include="Content\fonts\slick.woff" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -263,6 +269,8 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\slick.js" />
+    <Content Include="Scripts\slick.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
