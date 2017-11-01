@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DreamworldHomepage.Models.Pricing;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +12,8 @@ namespace DreamworldHomepage.ViewModels
         {
             Navigation = new NavigationViewModel();
             Banner = new BannerViewModel();
+            ParkPricing = new TicketOffice();
+            HelpMeFindTherightTicket = ParkPricing;
         }
 
         public NavigationViewModel Navigation { get; set; }
@@ -19,7 +22,7 @@ namespace DreamworldHomepage.ViewModels
 
         public string ParkInformation { get; set; }
 
-        public string ParkPricing { get; set; }
+        public TicketOffice ParkPricing { get; set; }
 
         public string  WhatsGoingOn { get; set; }
 
@@ -27,7 +30,7 @@ namespace DreamworldHomepage.ViewModels
 
         public string ParkUpdates { get; set; }
 
-        public string HelpMeFindTherightTicket { get; set; }
+        public TicketOffice HelpMeFindTherightTicket { get; set; }
 
         public string LiveAtDreamworld { get; set; }
 
