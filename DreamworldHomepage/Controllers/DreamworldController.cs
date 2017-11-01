@@ -1,9 +1,4 @@
-﻿using DreamworldHomepage.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace DreamworldHomepage.Controllers
 {
@@ -12,7 +7,7 @@ namespace DreamworldHomepage.Controllers
         // GET: Dreamworld
         public ActionResult Home()
         {
-            var model = new HomepageViewModel();
+            var model = TestData.TestData.GetData();
             return View(model);
         }
     }

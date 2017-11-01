@@ -1,1 +1,11 @@
-﻿<h1>Navigation</h1>
+﻿@model DreamworldHomepage.ViewModels.NavigationViewModel
+<h1>Navigation</h1>
+
+@{
+    <ul>
+        @foreach(var item in Model.MenuItems)
+        {
+            <li>@item.Text</li>
+        }
+    </ul>
+}
