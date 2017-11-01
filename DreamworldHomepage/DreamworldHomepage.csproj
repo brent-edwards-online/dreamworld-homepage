@@ -207,6 +207,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Navigation\MenuCategory.cs" />
     <Compile Include="Models\Navigation\MenuItem.cs" />
     <Compile Include="Models\Navigation\MenuPage.cs" />
     <Compile Include="Models\Navigation\MenuSection.cs" />
@@ -223,6 +224,23 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\Banner\Homepage_head-banner_desktop.jpg" />
+    <Content Include="Content\images\Banner\Homepage_head-banner_mobile.jpg" />
+    <Content Include="Content\images\HelpMeFindTheRightTicket\icon_ticket_1 day.svg" />
+    <Content Include="Content\images\HelpMeFindTheRightTicket\icon_ticket_3 day.svg" />
+    <Content Include="Content\images\HelpMeFindTheRightTicket\icon_ticket_7 day.svg" />
+    <Content Include="Content\images\HelpMeFindTheRightTicket\icon_ticket_annual pass.svg" />
+    <Content Include="Content\images\HelpMeFindTheRightTicket\icon_ticket_season pass.svg" />
+    <Content Include="Content\images\LiveAtDreamworld\icon_instagram.svg" />
+    <Content Include="Content\images\Navigation\Dreamworld_logo.svg" />
+    <Content Include="Content\images\Navigation\icon_search.svg" />
+    <Content Include="Content\images\ParkInformation\icon_directions.svg" />
+    <Content Include="Content\images\ParkInformation\icon_park map.svg" />
+    <Content Include="Content\images\ParkInformation\icon_ride height.svg" />
+    <Content Include="Content\images\WhatsGoingOn\carousel_whats-on_1.jpg" />
+    <Content Include="Content\images\WhatsGoingOn\carousel_whats-on_2.jpg" />
+    <Content Include="Content\images\WhatsGoingOn\carousel_whats-on_3.jpg" />
+    <Content Include="Content\images\WhatsGoingOn\carousel_whats-on_4.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -274,6 +292,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\images\Footer\" />
+    <Folder Include="Content\images\ParkPricing\" />
+    <Folder Include="Content\images\ParkUpdate\" />
+    <Folder Include="Content\images\SignUpforSpecialOffers\" />
+    <Folder Include="Content\images\YourFavouriteDreamworldExperiences\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
