@@ -1,0 +1,21 @@
+﻿
+@model DreamworldHomepage.ViewModels.HomepageViewModel
+
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    Html.RenderPartial("Partials/_Navigation", Model.Navigation);
+    Html.RenderPartial("Partials/_Banner", Model.Banner);
+    Html.RenderPartial("Partials/_ParkInformation", Model.ParkInformation);
+    Html.RenderPartial("Partials/_ParkPricing", Model.ParkPricing);
+    Html.RenderPartial("Partials/_WhatsGoingOn", Model.WhatsGoingOn);
+    Html.RenderPartial("Partials/_YourFavouriteDreamworldExperiences", Model.YourFavouriteExperiences);
+    Html.RenderPartial("Partials/_ParkUpdates", Model.ParkUpdates);
+    Html.RenderPartial("Partials/_HelpMeFindTheRightTicket", Model.HelpMeFindTherightTicket);
+    Html.RenderPartial("Partials/_LiveAtDreamworld", Model.LiveAtDreamworld);
+    Html.RenderPartial("Partials/_SignUpForSpecialOffers", Model.SignUpforSpecialOffers);
+    Html.RenderPartial("Partials/_Footer", Model.Footer);
+}
+
