@@ -1,1 +1,24 @@
-﻿
+﻿section {
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px #000;
+    height: 200px;
+    max-width: 1280px;
+    background-color: red;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    section {
+        width: 100%;
+        background-color: green;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    section {
+        width: 100%;
+        background-color: blue;
+    }
+}
