@@ -1,3 +1,171 @@
-﻿<section class="component">
+﻿@model DreamworldHomepage.ViewModels.YourFavouriteDreamworldExperiencesViewModel
 
+<style>
+    #fav-experiences {
+        background-color: #F4F4F4;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 100px;
+        padding-right: 100px;
+        color: #4E20A1;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #fav-experiences h1{
+        text-align: center
+    }
+
+    #fav-experiences img{
+        
+    }
+
+    #fav-experiences img:hover{
+        
+    }
+
+    .tile p {
+        display: inline;
+    }
+
+    .collage {
+        position: relative;
+    }
+
+    .collage-large-0 {
+        position: absolute;
+        left: 0%;
+        top: 216px; 
+        width: 40%;
+    }
+
+    .collage-large-1 {
+        position: absolute;
+        left: 40%;
+        top: 0%; 
+        width: 40%;
+    }
+
+    .collage-medium-0 {
+        position: absolute;
+        left: 60%;
+        top: 432px; 
+        width: 40%;
+    }
+
+    .collage-medium-1 {
+        display: none;        
+    }
+
+    .collage-small-0 {
+        position: absolute;
+        left: 0%;
+        top: 0%; 
+        width: 20%;
+    }
+
+    .collage-small-1 {
+        position: absolute;
+        left: 20%;
+        top: 0%; 
+        width: 20%;
+    }
+
+    .collage-small-2 {
+        position: absolute;
+        left: 80%;
+        top: 0%; 
+        width: 20%;
+    }
+
+    .collage-small-3 {
+        position: absolute;
+        left: 80%;
+        top: 216px; 
+        width: 20%;
+    }
+
+    .collage-small-4 {
+        position: absolute;
+        left: 40%;
+        top: 432px; 
+        width: 20%;
+    }
+</style>
+
+<section id="fav-experiences" class="component">
+    <h1>@Model.Title</h1>
+     
+    <div class="collage">
+        <div class="tile collage-large-0" style="background-image:Url(@Model.Large0.Image)">
+            @{                
+                <p>@Model.Large0.Title</p>
+                <p>@Model.Large0.Size</p>
+            }
+        </div>
+
+        <div class="tile collage-large-1">
+            @{
+                <img src="@Model.Large1.Image" />
+                <p>@Model.Large1.Title</p>
+                <p>@Model.Large1.Size</p>
+            }
+        </div>
+
+        <div class="tile collage-medium-0">
+            @{
+                <img src="@Model.Medium0.Image" />
+                <p>@Model.Medium0.Title</p>
+                <p>@Model.Medium0.Size</p>
+            }
+        </div>
+
+        <div class="tile collage-medium-1">
+            @{
+                <img src="@Model.Medium1.Image" />
+                <p>@Model.Medium1.Title</p>
+                <p>@Model.Medium1.Size</p>
+            }
+        </div>
+
+        <div class="tile collage-small-0">
+            @{
+                <img src="@Model.Small0.Image" />
+                <p>@Model.Small0.Title</p>
+                <p>@Model.Small0.Size</p>
+            }
+        </div>
+
+        <div class="tile collage-small-1">
+            @{
+                <img src="@Model.Small1.Image" />
+                <p>@Model.Small1.Title</p>
+                <p>@Model.Small1.Size</p>
+            }
+        </div>
+
+        <div class="tile collage-small-2">
+            @{
+                <img src="@Model.Small2.Image" />
+                <p>@Model.Small2.Title</p>
+                <p>@Model.Small2.Size</p>
+            }
+        </div>
+
+        <div class="tile collage-small-3">
+            @{
+                <img src="@Model.Small3.Image" />
+                <p>@Model.Small3.Title</p>
+                <p>@Model.Small3.Size</p>
+            }
+        </div>
+
+        <div class="tile collage-small-4">
+            @{
+                <img src="@Model.Small4.Image" />
+                <p>@Model.Small4.Title</p>
+                <p>@Model.Small4.Size</p>
+            }
+        </div>
+    </div> 
 </section>

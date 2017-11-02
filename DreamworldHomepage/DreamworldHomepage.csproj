@@ -203,6 +203,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Models\YourFavouriteDreamworldExperiences\FavouriteDreamWorldExperienceItem.cs" />
     <Compile Include="Controllers\DreamworldController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -211,15 +212,20 @@
     <Compile Include="Models\Navigation\MenuItem.cs" />
     <Compile Include="Models\Navigation\MenuPage.cs" />
     <Compile Include="Models\Navigation\MenuSection.cs" />
+    <Compile Include="Models\ParkUpdate\ParkUpdateItem.cs" />
     <Compile Include="Models\Pricing\Ticket.cs" />
     <Compile Include="Models\Pricing\TicketGroup.cs" />
     <Compile Include="Models\Pricing\TicketOffice.cs" />
+    <Compile Include="Models\WhatsGoingOn\WhatsGoingOnItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="TestData\TestData.cs" />
     <Compile Include="ViewModels\BannerViewModel.cs" />
     <Compile Include="ViewModels\HomepageViewModel.cs" />
     <Compile Include="ViewModels\NavigationViewModel.cs" />
+    <Compile Include="ViewModels\ParkUpdatesViewModel.cs" />
+    <Compile Include="ViewModels\WhatsGoingOnViewModel.cs" />
+    <Compile Include="ViewModels\YourFavouriteDreamworldExperiencesViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -242,6 +248,15 @@
     <Content Include="Content\images\WhatsGoingOn\carousel_whats-on_2.jpg" />
     <Content Include="Content\images\WhatsGoingOn\carousel_whats-on_3.jpg" />
     <Content Include="Content\images\WhatsGoingOn\carousel_whats-on_4.jpg" />
+    <Content Include="Content\images\YourFavouriteDreamworldExperiences\large-0.jpg" />
+    <Content Include="Content\images\YourFavouriteDreamworldExperiences\large-1.jpg" />
+    <Content Include="Content\images\YourFavouriteDreamworldExperiences\med-0.jpg" />
+    <Content Include="Content\images\YourFavouriteDreamworldExperiences\med-1.jpg" />
+    <Content Include="Content\images\YourFavouriteDreamworldExperiences\small-0.jpg" />
+    <Content Include="Content\images\YourFavouriteDreamworldExperiences\small-1.jpg" />
+    <Content Include="Content\images\YourFavouriteDreamworldExperiences\small-2.jpg" />
+    <Content Include="Content\images\YourFavouriteDreamworldExperiences\small-3.jpg" />
+    <Content Include="Content\images\YourFavouriteDreamworldExperiences\small-4.jpg" />
     <Content Include="Content\slick-theme.css" />
     <Content Include="Content\slick.css" />
     <Content Include="favicon.ico" />
@@ -304,7 +319,6 @@
     <Folder Include="Content\images\ParkPricing\" />
     <Folder Include="Content\images\ParkUpdate\" />
     <Folder Include="Content\images\SignUpforSpecialOffers\" />
-    <Folder Include="Content\images\YourFavouriteDreamworldExperiences\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

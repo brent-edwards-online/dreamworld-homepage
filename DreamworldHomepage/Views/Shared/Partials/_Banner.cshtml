@@ -1,1 +1,38 @@
-﻿<h1>Banner</h1>
+﻿@model DreamworldHomepage.ViewModels.BannerViewModel
+
+<style>
+    #banner {
+        background-image: Url(@Model.Image);
+        background-size: cover;        
+    }
+
+    #banner h1,  #banner button{
+        color: #fff;
+        font-size: 60pt;
+        margin-left: 486.437px;
+    }
+
+    #banner h1{
+        color: #fff;
+        font-size: 60pt;       
+        max-width: 360px; 
+    }
+
+    #banner button{
+        color: #0091D5;
+        font-size: 20pt;
+        font-weight: bold;
+        width: 150px;
+        height: 60px;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+    
+</style>
+
+<div id="banner">
+    <div class="content">
+        <h1>@Model.Title</h1>
+        <button type="button">@Model.ButtonText</button>
+    </div>    
+</div>

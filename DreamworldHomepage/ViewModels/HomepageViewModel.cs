@@ -1,4 +1,5 @@
 ﻿using DreamworldHomepage.Models.Pricing;
+using DreamworldHomepage.Models.WhatsGoingOn;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,7 @@ namespace DreamworldHomepage.ViewModels
             Banner = new BannerViewModel();
             ParkPricing = new TicketOffice();
             HelpMeFindTherightTicket = ParkPricing;
+            WhatsGoingOn = new WhatsGoingOnViewModel();
         }
 
         public NavigationViewModel Navigation { get; set; }
@@ -24,11 +26,11 @@ namespace DreamworldHomepage.ViewModels
 
         public TicketOffice ParkPricing { get; set; }
 
-        public string  WhatsGoingOn { get; set; }
+        public WhatsGoingOnViewModel WhatsGoingOn { get; set; }
 
-        public string YourFavouriteExperiences { get; set; }
+        public YourFavouriteDreamworldExperiencesViewModel YourFavouriteDreamworldExperiences { get; set; }
 
-        public string ParkUpdates { get; set; }
+        public ParkUpdatesViewModel ParkUpdates { get; set; }
 
         public TicketOffice HelpMeFindTherightTicket { get; set; }
 

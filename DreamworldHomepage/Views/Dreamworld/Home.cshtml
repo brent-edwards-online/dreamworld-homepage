@@ -11,7 +11,7 @@
     Html.RenderPartial("Partials/_ParkInformation", Model.ParkInformation);
     Html.RenderPartial("Partials/_ParkPricing", Model.ParkPricing);
     Html.RenderPartial("Partials/_WhatsGoingOn", Model.WhatsGoingOn);
-    Html.RenderPartial("Partials/_YourFavouriteDreamworldExperiences", Model.YourFavouriteExperiences);
+    Html.RenderPartial("Partials/_YourFavouriteDreamworldExperiences", Model.YourFavouriteDreamworldExperiences);
     Html.RenderPartial("Partials/_ParkUpdates", Model.ParkUpdates);
     Html.RenderPartial("Partials/_HelpMeFindTheRightTicket", Model.HelpMeFindTherightTicket);
     Html.RenderPartial("Partials/_LiveAtDreamworld", Model.LiveAtDreamworld);
@@ -23,6 +23,35 @@
 @section scripts{
     <script>
         $(function () {
+
+            $(".park-updates-slick").slick({
+                arrows: false,
+                //infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: true,
+                centerMode: true,
+                responsive: [
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+
             $('.the-slick').slick({
                 arrows: false,
                 //infinite: true,

@@ -1,3 +1,49 @@
-﻿<section class="component">
+﻿@model DreamworldHomepage.ViewModels.ParkUpdatesViewModel
 
-</section>
+<style>
+    #park-updates {
+        background-color: #F4F4F4;
+        padding-bottom: 80px;
+    }
+
+        #park-updates .slick-content {
+            background-color: #fff;
+            max-width: 240px;
+        }
+
+        #park-updates img {
+            max-width: 240px;
+        }
+
+        #park-updates h1 {
+            color: #4E20A1;
+            font-size: 12pt;
+        }
+
+        #park-updates h2 {
+            color: #000;
+            font-size: 12pt;            
+        }
+
+        #park-updates h3 {
+            color: #000;
+            font-size: 16pt;            
+        }
+</style>
+
+@{
+    <section id="park-updates">
+        <div class="slick-container" max-width="1080px">
+            <div class="park-updates-slick">
+                @foreach (var item in Model.Items)
+                {
+                    <div class="slick-content">                        
+                        <h1>@item.Title</h1>
+                        <h2>@item.Datetext</h2>
+                        <h3>@item.Description</h3>                        
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+}

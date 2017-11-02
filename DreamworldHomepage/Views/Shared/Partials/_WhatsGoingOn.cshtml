@@ -1,18 +1,48 @@
-﻿<section class="component">
-    <div class="slick-container" max-width="1080px">
-        <div class="the-slick">
-            <div class="slick-content">
-                <img src="~/Content/images/WhatsGoingOn/carousel_whats-on_1.jpg" width="200" />
-            </div>
-            <div class="slick-content">
-                <img src="~/Content/images/WhatsGoingOn/carousel_whats-on_2.jpg" width="200" />
-            </div>
-            <div class="slick-content">
-                <img src="~/Content/images/WhatsGoingOn/carousel_whats-on_3.jpg" width="200" />
-            </div>
-            <div class="slick-content">
-                <img src="~/Content/images/WhatsGoingOn/carousel_whats-on_4.jpg" width="200" />
+﻿@model DreamworldHomepage.ViewModels.WhatsGoingOnViewModel
+
+<style>
+    #whats-going-on {
+        background-color: #F4F4F4;
+        padding-bottom: 80px;
+    }
+
+    #whats-going-on .slick-content {
+        background-color: #fff;
+        max-width: 240px;
+    }
+
+    #whats-going-on img{
+        max-width: 240px;
+    }
+
+    #whats-going-on h1{
+        color: #BABABA;
+        font-size: 12pt;
+    }
+
+    #whats-going-on h2{
+        color: #BABABA;
+        font-size: 16pt;
+        font-weight: bold;
+    }
+</style>
+
+@{
+    <section id="whats-going-on" class="component">
+        <div class="slick-container" max-width="1080px">
+            <div class="the-slick">
+
+                @foreach (var item in Model.Items)
+                {
+                    <div class="slick-content">
+                        <img src="@item.Image"/>
+                        <h1>@item.DateText</h1>
+                        <h2 style="color:@item.Color">@item.Title</h2>
+                    </div>
+                }
             </div>
         </div>
-    </div>
-</section>
+    </section>
+}
+
+

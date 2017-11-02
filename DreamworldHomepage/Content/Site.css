@@ -1,8 +1,7 @@
 ﻿section {
     margin-left: auto;
     margin-right: auto;
-    border: solid 1px #000;
-    height: 200px;
+    border: solid 1px #000;    
     max-width: 1280px;
     background-color: red;
 }
