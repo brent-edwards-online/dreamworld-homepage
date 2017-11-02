@@ -20,71 +20,109 @@
         padding: 0;
         margin: 0;
     }
-    
+
     .collage div {
         border: solid 1px black;
     }
 
-    .collage-img { 
+    .collage-img {
+        position: absolute;
         background-size: cover;
-        transition: all .2s ease-in-out; 
+        transition: all .2s ease-in-out;
+        background-size: cover;
+        
     }
 
     .collage-img:hover{
+        z-index: 10;
         transform: scale(1.05, 1.05);
         box-shadow: 0 4px 2px -2px black;
     }
 
-    #collage-container{
-    
+    #collage-container {
+        position:relative;
+        max-width: 1080px;
     }
 
     .collage-lg{
-        border: solid black 1px; 
         width:40%;
-        height:66%; 
+        height:66%;
     }
 
     .collage-md{
-        border: solid black 1px; 
         width:40%;
-        height:33%; 
+        height:33%;
     }
 
     .collage-sm{
-        border: solid black 1px; 
         width:20%;
-        height:33%; 
+        height:33%;
     }
 
-    #collage-sm-0 {        
-        border: solid black 1px; 
-        background-image:Url(@Model.Small0.Image); 
-        background-size: cover;
+    #collage-lg-0 {
+        left: 0%;
+        top: 33%;
+        background-image: Url(@Model.Large0.Image);
     }
 
-    #collage-sm-1 {        
-        border: solid black 1px; 
-        background-image:Url(@Model.Small2.Image); 
-        background-size: cover;
+    #collage-lg-1 {
+        left: 40%;
+        top: 0%;
+        background-image: Url(@Model.Large1.Image);
+    }
+
+    #collage-md-0 {
+        left: 60%;
+        top: 66%;
+        background-image: Url(@Model.Medium0.Image);
+    }
+    
+    #collage-sm-0 {
+        left: 0%;
+        top: 0%;
+        background-image: Url(@Model.Small0.Image);
+    }
+
+    #collage-sm-1 {
+        left: 20%;
+        top: 0%;
+        background-image: Url(@Model.Small1.Image);
+    }
+
+    #collage-sm-2 {
+        left: 80%;
+        top: 0%;
+        background-image: Url(@Model.Small2.Image);
+    }
+
+    #collage-sm-3 {
+        left: 80%;
+        top: 33%;
+        background-image: Url(@Model.Small3.Image);
+    }
+
+    #collage-sm-4 {
+        left: 40%;
+        top: 66%;
+        background-image: Url(@Model.Small4.Image);
     }
 
 </style>
 
-<section id="fav-experiences" class="component">
+<section id="fav-experiences" class="">
     <h1>@Model.Title</h1>
 
-    <div id="collage-container" style="max-width: 1080px; border: solid hotpink 1px">        
-        <div id="collage-lg-0" class="collage-img"></div>
-        <div id="collage-lg-1" class="collage-img"></div>
+    <div id="collage-container" style="">
+        <div id="collage-lg-0" class="collage-lg collage-img"></div>
+        <div id="collage-lg-1" class="collage-lg collage-img"></div>
 
-        <div id="collage-md-0" class="collage-img"></div>
-        <div id="collage-md-1" class="collage-img"></div>        
+        <div id="collage-md-0" class="collage-md collage-img"></div>
+        <div id="collage-md-1" class="collage-md collage-img"></div>
 
-        <div id="collage-sm-0" class="collage-img"></div>
-        <div id="collage-sm-1" class="collage-img"></div>
-        <div id="collage-sm-2" class="collage-img"></div>
-        <div id="collage-sm-3" class="collage-img"></div>
-        <div id="collage-sm-4" class="collage-img"></div>               
+        <div id="collage-sm-0" class="collage-sm collage-img"></div>
+        <div id="collage-sm-1" class="collage-sm collage-img"></div>
+        <div id="collage-sm-2" class="collage-sm collage-img"></div>
+        <div id="collage-sm-3" class="collage-sm collage-img"></div>
+        <div id="collage-sm-4" class="collage-sm collage-img"></div>
     </div>
 </section>

@@ -231,6 +231,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\fonts\slick.svg" />
+    <Content Include="Content\global.css" />
     <Content Include="Content\images\Banner\Homepage_head-banner_desktop.jpg" />
     <Content Include="Content\images\Banner\Homepage_head-banner_mobile.jpg" />
     <Content Include="Content\images\HelpMeFindTheRightTicket\icon_ticket_1 day.svg" />
@@ -273,6 +274,7 @@
     <Content Include="Content\fonts\slick.eot" />
     <Content Include="Content\fonts\slick.ttf" />
     <Content Include="Content\fonts\slick.woff" />
+    <Content Include="Content\dw.styles.css" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
