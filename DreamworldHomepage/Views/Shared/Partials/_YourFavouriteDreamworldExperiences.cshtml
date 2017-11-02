@@ -17,155 +17,74 @@
     }
 
     #fav-experiences img{
-        
+        padding: 0;
+        margin: 0;
+    }
+    
+    .collage div {
+        border: solid 1px black;
     }
 
-    #fav-experiences img:hover{
-        
+    .collage-img { 
+        background-size: cover;
+        transition: all .2s ease-in-out; 
     }
 
-    .tile p {
-        display: inline;
+    .collage-img:hover{
+        transform: scale(1.05, 1.05);
+        box-shadow: 0 4px 2px -2px black;
     }
 
-    .collage {
-        position: relative;
+    #collage-container{
+    
     }
 
-    .collage-large-0 {
-        position: absolute;
-        left: 0%;
-        top: 216px; 
-        width: 40%;
+    .collage-lg{
+        border: solid black 1px; 
+        width:40%;
+        height:66%; 
     }
 
-    .collage-large-1 {
-        position: absolute;
-        left: 40%;
-        top: 0%; 
-        width: 40%;
+    .collage-md{
+        border: solid black 1px; 
+        width:40%;
+        height:33%; 
     }
 
-    .collage-medium-0 {
-        position: absolute;
-        left: 60%;
-        top: 432px; 
-        width: 40%;
+    .collage-sm{
+        border: solid black 1px; 
+        width:20%;
+        height:33%; 
     }
 
-    .collage-medium-1 {
-        display: none;        
+    #collage-sm-0 {        
+        border: solid black 1px; 
+        background-image:Url(@Model.Small0.Image); 
+        background-size: cover;
     }
 
-    .collage-small-0 {
-        position: absolute;
-        left: 0%;
-        top: 0%; 
-        width: 20%;
+    #collage-sm-1 {        
+        border: solid black 1px; 
+        background-image:Url(@Model.Small2.Image); 
+        background-size: cover;
     }
 
-    .collage-small-1 {
-        position: absolute;
-        left: 20%;
-        top: 0%; 
-        width: 20%;
-    }
-
-    .collage-small-2 {
-        position: absolute;
-        left: 80%;
-        top: 0%; 
-        width: 20%;
-    }
-
-    .collage-small-3 {
-        position: absolute;
-        left: 80%;
-        top: 216px; 
-        width: 20%;
-    }
-
-    .collage-small-4 {
-        position: absolute;
-        left: 40%;
-        top: 432px; 
-        width: 20%;
-    }
 </style>
 
 <section id="fav-experiences" class="component">
     <h1>@Model.Title</h1>
-     
-    <div class="collage">
-        <div class="tile collage-large-0" style="background-image:Url(@Model.Large0.Image)">
-            @{                
-                <p>@Model.Large0.Title</p>
-                <p>@Model.Large0.Size</p>
-            }
-        </div>
 
-        <div class="tile collage-large-1">
-            @{
-                <img src="@Model.Large1.Image" />
-                <p>@Model.Large1.Title</p>
-                <p>@Model.Large1.Size</p>
-            }
-        </div>
+    <div id="collage-container" style="max-width: 1080px; border: solid hotpink 1px">        
+        <div id="collage-lg-0" class="collage-img"></div>
+        <div id="collage-lg-1" class="collage-img"></div>
 
-        <div class="tile collage-medium-0">
-            @{
-                <img src="@Model.Medium0.Image" />
-                <p>@Model.Medium0.Title</p>
-                <p>@Model.Medium0.Size</p>
-            }
-        </div>
+        <div id="collage-md-0" class="collage-img"></div>
+        <div id="collage-md-1" class="collage-img"></div>        
 
-        <div class="tile collage-medium-1">
-            @{
-                <img src="@Model.Medium1.Image" />
-                <p>@Model.Medium1.Title</p>
-                <p>@Model.Medium1.Size</p>
-            }
-        </div>
-
-        <div class="tile collage-small-0">
-            @{
-                <img src="@Model.Small0.Image" />
-                <p>@Model.Small0.Title</p>
-                <p>@Model.Small0.Size</p>
-            }
-        </div>
-
-        <div class="tile collage-small-1">
-            @{
-                <img src="@Model.Small1.Image" />
-                <p>@Model.Small1.Title</p>
-                <p>@Model.Small1.Size</p>
-            }
-        </div>
-
-        <div class="tile collage-small-2">
-            @{
-                <img src="@Model.Small2.Image" />
-                <p>@Model.Small2.Title</p>
-                <p>@Model.Small2.Size</p>
-            }
-        </div>
-
-        <div class="tile collage-small-3">
-            @{
-                <img src="@Model.Small3.Image" />
-                <p>@Model.Small3.Title</p>
-                <p>@Model.Small3.Size</p>
-            }
-        </div>
-
-        <div class="tile collage-small-4">
-            @{
-                <img src="@Model.Small4.Image" />
-                <p>@Model.Small4.Title</p>
-                <p>@Model.Small4.Size</p>
-            }
-        </div>
-    </div> 
+        <div id="collage-sm-0" class="collage-img"></div>
+        <div id="collage-sm-1" class="collage-img"></div>
+        <div id="collage-sm-2" class="collage-img"></div>
+        <div id="collage-sm-3" class="collage-img"></div>
+        <div id="collage-sm-4" class="collage-img"></div>               
+    </div>
 </section>
