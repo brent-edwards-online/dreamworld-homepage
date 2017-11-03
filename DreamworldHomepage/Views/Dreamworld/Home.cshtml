@@ -23,10 +23,40 @@
 @section scripts{
     <script>
         $(function () {
+                        
+            $(".slick-ticket").slick({
+                centerMode: false,
+                arrows: false,
+                infinite: false,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                dots: true,
+                centerMode: true,
+                responsive: [
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
 
             $(".park-updates-slick").slick({
+                centerMode: false,
                 arrows: false,
-                //infinite: true,
+                infinite: false,
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 dots: true,
@@ -53,8 +83,9 @@
             });
 
             $('.the-slick').slick({
+                centerMode: false,
                 arrows: false,
-                //infinite: true,
+                infinite: false,
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 dots: true,
@@ -78,12 +109,6 @@
                     // settings: "unslick"
                     // instead of a settings object
                 ]
-            });
-
-            $('.grid').masonry({
-                itemSelector: '.grid-item',
-                columnWidth: '.grid-sizer',
-                percentPosition: true
             });
 
             $("#collage-container").height($("#collage-container").width() * 0.6);
