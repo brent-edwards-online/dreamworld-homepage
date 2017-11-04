@@ -2,65 +2,65 @@
 
 <style>
     #park-updates {
+        
         background-color: #EAEAEA;
-        padding-bottom: 80px;
+        position: relative;
     }
 
-        .park-updates-slick .slick-slide {
-            background-color: #EAEAEA;
-            border: solid black 1px;
-            width: 200px;
-            margin-left: 20px;
-            padding-left: 20px;
-        }
+    #park-updates h1 {
+        font-family: 'Amsi Pro';
+        color: #4E20A1;
+        font-size: 12pt;
+    }
 
-        #park-updates h1 {
-            color: #4E20A1;
-            font-size: 12pt;
-        }
+    #park-updates h2 {
+        font-family: 'Amsi Pro';
+        color: #000;
+        font-size: 12pt;
+    }
 
-        #park-updates h2 {
-            color: #000;
-            font-size: 12pt;            
-        }
+    #park-updates h3 {
+        font-family: 'Amsi Pro';
+        color: #000;
+        font-size: 16pt;
+    }
 
-        #park-updates h3 {
-            color: #000;
-            font-size: 16pt;            
-        }
+    .park-updates-slick-container {
+        margin-left: 100px;
+        margin-right: 100px;
+        background-color: green;
+    }
+    
+    .park-updates-slick .slick-slide {
+        background-color: #EAEAEA;
+        border: solid red 1px;
+        padding-left: 10px;
+        height:250px;
 
-        .park-updates-slick-container{
-            margin-left: 100px;
-            margin-right: 100px;
-            background-color: green;
-        }
+    }
 
-        .carousel-button {
-            height: 70px;
-            width: 70px;
-            background-color: #0091d5;
-            position: absolute;
-            top: 50%;
-            /*transform: translate(0%,-75%);*/
-            cursor: pointer;
-        }
+    #update-left, #update-right {
+        background-color: #4E20A1;
+    }
 </style>
 
 @{
     <section id="park-updates">
-        <div id="update-left" class="carousel-button left">Left</div>
-        <div id="update-right" class="carousel-button right">Right</div>
+        <div style="width:100%">
+            <div id="update-left" class="carousel-button left">Left</div>
+            <div id="update-right" class="carousel-button right">Right</div>
 
-        <div class="park-updates-slick-container">
-            <div class="park-updates-slick">
-                @foreach (var item in Model.Items)
-                {
-                    <div>                        
-                        <h1>@item.Title</h1>
-                        <h2>@item.Datetext</h2>
-                        <h3>@item.Description</h3>                        
-                    </div>
-                }
+            <div class="park-updates-slick-container">
+                <div class="park-updates-slick">
+                    @foreach (var item in Model.Items)
+                    {
+                        <div style="width: 200px">
+                            <h1>@item.Title</h1>
+                            <h2>@item.Datetext</h2>
+                            <h3>@item.Description</h3>
+                        </div>
+                    }
+                </div>
             </div>
         </div>
     </section>

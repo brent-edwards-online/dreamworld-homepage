@@ -7,87 +7,72 @@
         position: relative;
     }
 
-    #whats-going-on .slick-content {
-        background-color: #fff;
-        max-width: 240px;
-    }
+        #whats-going-on .slick-content {
+            background-color: #fff;
+            max-width: 240px;
+        }
 
-    #whats-going-on img{
-        max-width: 240px;
-    }
+        #whats-going-on img {
+            max-width: 240px;
+        }
 
-    #whats-going-on h2{
-        color: #BABABA;
-        font-size: 12pt;
-    }
+        #whats-going-on h2 {
+            color: #BABABA;
+            font-size: 12pt;
+        }
 
-    #whats-going-on h3{
-        color: #BABABA;
-        font-size: 16pt;
-        font-weight: bold;
-    }
+        #whats-going-on h3 {
+            color: #BABABA;
+            font-size: 16pt;
+            font-weight: bold;
+        }
 
-    .carousel-button {
-        height: 70px;
-        width: 70px;
-        background-color: #0091d5;
-        position: absolute;
-        top: 50%;
-        /*transform: translate(0%,-75%);*/
-        cursor: pointer;
-    }
 
-    .left{
-        position: absolute;
-        left: 0px;
-    }
-
-    .right{
-        position: absolute;
-        right: 0px;
-    }
 
     .whats-going-on-slick-container {
-        
         margin-left: 100px;
         margin-right: 100px;
     }
 
-    .whats-going-on-slick-container h1 {
-        font-family: 'Amsi Pro';
-        font-weight: bold;
-        font-size: 30px;
-        color: #0091d5
-    }
+        .whats-going-on-slick-container h1 {
+            font-family: 'Amsi Pro';
+            font-weight: bold;
+            font-size: 30px;
+            color: #0091d5;
+        }
+
     .whats-going-on-slick {
-        border: 1px black solid;  
+        border: 1px black solid;
     }
 
     .slick-slide {
         margin: 0 0px;
     }
 
+    #what-left, #what-right {
+        background-color: #0091d5;
+    }
 </style>
 
-    <section id="whats-going-on" class="">
-        <div id="what-left" class="carousel-button left">Left</div>
-        <div id="what-right" class="carousel-button right">Right</div>
+<section id="whats-going-on" class="">
+    <div id="what-left" class="carousel-button left">Left</div>
+    <div id="what-right" class="carousel-button right">Right</div>
 
-        <div class="whats-going-on-slick-container">
-            <h1>What's going on?</h1>
-            <div class="whats-going-on-slick">
+    <div class="whats-going-on-slick-container">
+        <h1>What's going on?</h1>
+        <div class="whats-going-on-slick">
 
-                @foreach (var item in Model.Items)
-                {
-                    <div class="slick-content">
-                        <img src="@item.Image" />
-                        <h2>@item.DateText</h2>
-                        <h3 style="color:@item.Color">@item.Title</h3>
-                    </div>
-                }
-            </div>
+            @foreach (var item in Model.Items)
+            {
+                <div class="slick-content">
+                    <img src="@item.Image" />
+                    <h2>@item.DateText</h2>
+                    <h3 style="color:@item.Color">@item.Title</h3>
+                </div>
+            }
         </div>
-    </section>
+    </div>
+</section>
 
 
 

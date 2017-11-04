@@ -1,8 +1,19 @@
-﻿section {
+﻿.clearfix {
+  overflow: auto;
+}
+
+section {
     margin-left: auto;
     margin-right: auto;
     /*border: solid 1px #000;*/
     max-width: 1280px;
+}
+
+.carousel-button {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    cursor: pointer;
 }
 
 .left {
@@ -13,6 +24,14 @@
 .right {
     position: absolute;
     right: 0px;
+}
+
+.carousel-button.left{
+    border-radius: 0px 5px 5px 0px;
+}
+
+.carousel-button.right{
+    border-radius: 5px 0px 0px 5px;
 }
 
 /* Small devices (landscape phones, 576px and up)*/

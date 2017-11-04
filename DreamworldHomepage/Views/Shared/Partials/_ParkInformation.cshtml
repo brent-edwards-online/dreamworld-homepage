@@ -1,7 +1,6 @@
 ﻿<style>
-    .information-item{
-        width: 50%;
-        background-color: fff#
+    #park-information {
+
     }
 
     #park-information-content {
@@ -21,26 +20,31 @@
 
     #park-information-content > p span{
         font-weight: bold;
+    }
+
+    .information-items{
 
     }
 
     .information-item {
-        float: left;
         margin: 0;
-        border: blue 1px solid;
         font-family: 'Amsi Pro';
-        width: 32%;      
+        width: 33.33%;
+        float: left;      
+        display: table;
+            
     }
 
-    .information-item img{
+    .information-item > img{
         height: 50px;
-        margin: auto auto;
+        float: left;      
     }
 
     .information-item p {
-        border: 1px solid black;
-        width: 40%;
-        text-align: left;
+        color: #0091D5;
+        margin: auto 0;
+        display: table-cell; 
+        vertical-align: middle;
     }
 
 </style>
@@ -48,17 +52,19 @@
 <section id="park-information">
     <div id="park-information-content">
         <p><span>Open now</span> until 6:30am</p>
-        <div class="information-item">
-            <img src="~/Content/images/ParkInformation/icon_directions.svg" />
-            <p>Get Directions</p>
-        </div>
-        <div class="information-item ">
-            <img src="~/Content/images/ParkInformation/icon_ride height.svg" />
-            <p>Check Ride Height Limits</p>
-        </div>
-        <div class="information-item">
-            <img src="~/Content/images/ParkInformation/icon_park map.svg" />
-            <p>Download Park Map</p>
+        <div class="information-items clearfix">
+            <div class="information-item clearfix">
+                <img src="~/Content/images/ParkInformation/icon_directions.svg" />
+                <p>Get Directions</p>
+            </div>
+            <div class="information-item ">
+                <img src="~/Content/images/ParkInformation/icon_ride height.svg" />
+                <p>Check Ride<br />Height Limits</p>
+            </div>
+            <div class="information-item">
+                <img src="~/Content/images/ParkInformation/icon_park map.svg" />
+                <p>Download<br />Park Map</p>
+            </div>
         </div>
     </div>
 </section>

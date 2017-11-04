@@ -2,7 +2,23 @@
 
 <style>
     #main-navigation {
+        z-index: 10;
         position: fixed;
+    }
+
+    #main-navigation > ul {
+        list-style: none;
+    }
+
+    #main-navigation > ul > li {
+        float: left;
+        text-decoration: none;
+        padding: 0 10px;
+    }
+
+    #main-navigation > ul > li > a {
+        color: #ffffff;
+        font-family: 'Amsi Pro';
     }
 </style>
 
@@ -11,11 +27,13 @@
         <ul>
             @foreach (var item in Model.MenuItems)
             {
-                <li>@item.Text</li>
+                <li><a href="">@item.Text</a></li>
             }
         </ul>
     }
 </nav>
+
+
 
 @*<header id="header" class="dw-header">
     <div class="navbar-header visible-xs visible-sm">
@@ -2418,16 +2436,4 @@
 
         <div class="submenu mega-menu-hide"></div>
     </div>
-    <script type="text/javascript">AD.initUI.push({ "selector": ".searchbar", "module": "SearchAuto" });</script>
-
-
-    <script>
-    function Validate() {
-        if (document.forms["search-form"]["q"].value.trim() == "")
-            return false;
-        else
-            return true;
-    }
-    </script>
-
 </header>*@
