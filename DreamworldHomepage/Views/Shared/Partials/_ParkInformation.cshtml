@@ -49,6 +49,88 @@
 
 </style>
 
+<style>
+        #park-pricing {
+        background-color: #C11D33;
+        width: 335px;
+        height: 380px;
+        border-radius: 5px;
+        color: #ffffff;
+        font-family: 'Amsi Pro';
+        overflow: hidden;
+        position: relative;
+        top: -65px;
+        left: 60%;
+    }
+
+    .pricing-details {
+        padding: 5px;
+        margin-bottom: 40px;
+        border-top: solid 1px #ffffff;
+    }
+
+    .button {
+        font-family: 'Amsi Pro';
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        background-color: #ffffff;
+        color: #C11D33;
+        width: 100%;
+        padding: 2px 6px 2px 6px;
+        border-radius: 3px;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .price {
+        clear: both;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding: 10px 0px;
+    }
+
+    .price-label {
+        float: left;
+        font-family: 'Amsi Pro';
+        font-size: 18px;
+    }
+
+        .price-label span {
+            font-size: 12px;
+        }
+
+    .price-amount {
+        float: right;
+        font-family: 'Amsi Pro';
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #pricing-nav {
+        padding: 15px 0px;
+    }
+
+        #pricing-nav > ul {
+        }
+
+            #pricing-nav > ul > li {
+                display: inline;
+                padding: 0px 3px;
+            }
+
+                #pricing-nav > ul > li > a {
+                    color: #ffffff;
+                    font-family: 'Amsi Pro';
+                    font-size: 14px;
+                    text-decoration: none;
+                }
+</style>
+
 <section id="park-information">
     <div id="park-information-content">
         <p><span>Open now</span> until 6:30am</p>
@@ -65,6 +147,38 @@
                 <img src="~/Content/images/ParkInformation/icon_park map.svg" />
                 <p>Download<br />Park Map</p>
             </div>
+        </div>
+    </div>
+    <div id="park-pricing">
+        <nav id="pricing-nav">
+            <ul>
+                <li><a href="#">1 DAY</a></li>
+                <li><a href="#">3 DAY</a></li>
+                <li><a href="#">7 DAY</a></li>
+                <li><a href="#">ANNUAL PASS</a></li>
+            </ul>
+        </nav>
+        <div class="pricing-details">
+            <div class="price">
+                <p class="price-label">Adults</p>
+                <p class="price-amount">$99</p>
+            </div>
+            <div class="price">
+                <p class="price-label">Children</p>
+                <p class="price-amount">$89</p>
+                <p></p>
+            </div>
+            <div class="price">
+                <p class="price-label">Pensioners</p>
+                <p class="price-amount">$89</p>
+            </div>
+            <div class="price">
+                <p class="price-label">Family<br><span>(2 adults and 2 children)</span></p>
+                <p class="price-amount">$320</p>
+            </div>
+        </div>
+        <div>
+            <a href="#" class="button">Buy Tickets</a>
         </div>
     </div>
 </section>
