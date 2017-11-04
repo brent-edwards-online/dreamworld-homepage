@@ -8,8 +8,8 @@
 @{
     Html.RenderPartial("Partials/_Navigation", Model.Navigation);
     Html.RenderPartial("Partials/_Banner", Model.Banner);
-    Html.RenderPartial("Partials/_ParkInformation", Model.ParkInformation);
     Html.RenderPartial("Partials/_ParkPricing", Model.ParkPricing);
+    Html.RenderPartial("Partials/_ParkInformation", Model.ParkInformation);
     Html.RenderPartial("Partials/_WhatsGoingOn", Model.WhatsGoingOn);
     Html.RenderPartial("Partials/_YourFavouriteDreamworldExperiences", Model.YourFavouriteDreamworldExperiences);
     Html.RenderPartial("Partials/_ParkUpdates", Model.ParkUpdates);
@@ -24,34 +24,17 @@
     <script>
         $(function () {
                         
-            $(".slick-ticket").slick({
-                centerMode: false,
+            $('.whats-going-on-slick').slick({
                 arrows: false,
                 infinite: false,
-                slidesToShow: 2,
+                slidesToShow: 4,
                 slidesToScroll: 1,
-                dots: true,
+                dots: false,
                 centerMode: true,
-                responsive: [
-                    {
-                        breakpoint: 991,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }
-                    // You can unslick at a given breakpoint now by adding:
-                    // settings: "unslick"
-                    // instead of a settings object
-                ]
+                centerPadding: 0,
+                initialSlide: 1
             });
+
 
             $(".park-updates-slick").slick({
                 arrows: false,
@@ -60,15 +43,21 @@
                 slidesToScroll: 1,
                 dots: true,
                 centerMode: true,
+                centerPadding: 0,
+                initialSlide: 1
             });
 
-            $('.the-slick').slick({
+            
+            $(".help-me-slick").slick({
+                centerMode: false,
                 arrows: false,
                 infinite: false,
-                slidesToShow: 3,
+                slidesToShow: 2,
                 slidesToScroll: 1,
                 dots: true,
                 centerMode: true,
+                centerPadding: 0,
+                initialSlide: 1
             });
 
             $("#collage-container").height($("#collage-container").width() * 0.6);
@@ -81,8 +70,13 @@
                 $("#instagram-container").height($("#instagram-container").width() * 0.25);
             })
 
-            
+            $("#what-right").click(function () {
+                $('.whats-going-on-slick').slick("slickNext");
+            });
 
+            $("#what-left").click(function () {
+                $('.whats-going-on-slick').slick("slickPrev");
+            });
         });
     </script>
 }

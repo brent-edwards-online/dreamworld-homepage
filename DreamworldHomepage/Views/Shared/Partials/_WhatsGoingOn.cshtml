@@ -16,12 +16,12 @@
         max-width: 240px;
     }
 
-    #whats-going-on h1{
+    #whats-going-on h2{
         color: #BABABA;
         font-size: 12pt;
     }
 
-    #whats-going-on h2{
+    #whats-going-on h3{
         color: #BABABA;
         font-size: 16pt;
         font-weight: bold;
@@ -33,31 +33,63 @@
         background-color: #0091d5;
         position: absolute;
         top: 50%;
-        transform: translate(0%,-50%);
+        /*transform: translate(0%,-75%);*/
+        cursor: pointer;
     }
 
-    .slick-container {
-        /*background-color: red;*/
+    .left{
+        position: absolute;
+        left: 0px;
     }
+
+    .right{
+        position: absolute;
+        right: 0px;
+    }
+
+    .whats-going-on-slick-container {
+        
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .whats-going-on-slick-container h1 {
+        font-family: 'Amsi Pro';
+        font-weight: bold;
+        font-size: 30px;
+        color: #0091d5
+    }
+    .whats-going-on-slick {
+        border: 1px black solid;  
+    }
+
+    .slick-slide {
+        margin: 0 0px;
+    }
+
 </style>
 
     <section id="whats-going-on" class="">
-        <div class="slick-container" max-width="1080px">
-            <div class="the-slick">
+        <div id="what-left" class="carousel-button left">Left</div>
+        <div id="what-right" class="carousel-button right">Right</div>
+
+        <div class="whats-going-on-slick-container">
+            <h1>What's going on?</h1>
+            <div class="whats-going-on-slick">
 
                 @foreach (var item in Model.Items)
                 {
                     <div class="slick-content">
-                        <img src="@item.Image"/>
-                        <h1>@item.DateText</h1>
-                        <h2 style="color:@item.Color">@item.Title</h2>
+                        <img src="@item.Image" />
+                        <h2>@item.DateText</h2>
+                        <h3 style="color:@item.Color">@item.Title</h3>
                     </div>
                 }
             </div>
         </div>
-        
-        <div class="carousel-button left">Left</div>
-        <div class="carousel-button right">Right</div>
     </section>
+
+
+
 
 
