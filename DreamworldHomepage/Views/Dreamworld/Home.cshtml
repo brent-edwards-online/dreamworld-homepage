@@ -54,67 +54,34 @@
             });
 
             $(".park-updates-slick").slick({
-                centerMode: false,
                 arrows: false,
                 infinite: false,
-                slidesToShow: 3,
+                slidesToShow: 4,
                 slidesToScroll: 1,
                 dots: true,
                 centerMode: true,
-                responsive: [
-                    {
-                        breakpoint: 991,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }
-                    // You can unslick at a given breakpoint now by adding:
-                    // settings: "unslick"
-                    // instead of a settings object
-                ]
             });
 
             $('.the-slick').slick({
-                centerMode: false,
                 arrows: false,
                 infinite: false,
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 dots: true,
                 centerMode: true,
-                responsive: [
-                    {
-                        breakpoint: 991,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }
-                    // You can unslick at a given breakpoint now by adding:
-                    // settings: "unslick"
-                    // instead of a settings object
-                ]
             });
 
             $("#collage-container").height($("#collage-container").width() * 0.6);
             $(window).resize(function (event) {
                 $("#collage-container").height($("#collage-container").width() * 0.6);
             })
+
+            $("#instagram-container").height($("#instagram-container").width() * 0.25);
+            $(window).resize(function (event) {
+                $("#instagram-container").height($("#instagram-container").width() * 0.25);
+            })
+
+            
 
         });
     </script>

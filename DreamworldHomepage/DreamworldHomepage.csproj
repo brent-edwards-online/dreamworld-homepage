@@ -240,6 +240,10 @@
     <Content Include="Content\images\HelpMeFindTheRightTicket\icon_ticket_annual pass.svg" />
     <Content Include="Content\images\HelpMeFindTheRightTicket\icon_ticket_season pass.svg" />
     <Content Include="Content\images\LiveAtDreamworld\icon_instagram.svg" />
+    <Content Include="Content\images\LiveAtDreamworld\instagram-image-01.jpg" />
+    <Content Include="Content\images\LiveAtDreamworld\instagram-image-02.jpg" />
+    <Content Include="Content\images\LiveAtDreamworld\instagram-image-03.jpg" />
+    <Content Include="Content\images\LiveAtDreamworld\instagram-image-04.jpg" />
     <Content Include="Content\images\Navigation\Dreamworld_logo.svg" />
     <Content Include="Content\images\Navigation\icon_search.svg" />
     <Content Include="Content\images\ParkInformation\icon_directions.svg" />

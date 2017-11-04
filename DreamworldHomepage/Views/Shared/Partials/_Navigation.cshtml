@@ -1,12 +1,12 @@
 ﻿@model DreamworldHomepage.ViewModels.NavigationViewModel
 
 <style>
-    nav {
+    #main-navigation {
         position: fixed;
     }
 </style>
 
-<nav>
+<nav id="main-navigation">
     @{
         <ul>
             @foreach (var item in Model.MenuItems)

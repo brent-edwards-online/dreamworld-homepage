@@ -2,26 +2,41 @@
 
 
 <style>
-    #banner h1,  #banner button{
-        color: #fff;
-        font-size: 60pt;
-        margin-left: 486.437px;
+    #banner {   
+        position: relative;
     }
 
-    #banner h1{
-        color: #fff;
-        font-size: 60pt;
-        max-width: 360px;
+    #banner-content{
+        position: absolute;
+        top: 30%;
     }
 
-    #banner button{
-        color: #0091D5;
-        font-size: 20pt;
-        font-weight: bold;
+    #banner-content h1{
+        margin-top:0;
+        font-family: "Amsi Pro Black";
+        font-size: 60pt;
+        max-width: 500px;
+        color: #ffffff;
+        line-height: 65px;
+        margin-bottom: 5%;
+    }
+
+    #learn-more{
         width: 150px;
         height: 60px;
         background-color: #fff;
         border-radius: 5px;
+        text-align:center;
+        vertical-align: middle;
+    }
+
+    #banner-content a{
+        font-family: "Amsi Pro";
+        color: #0091D5;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration:none;
+        line-height: 60px;   
     }
 
     #banner img{			
@@ -51,8 +66,12 @@
 <div id="banner">
     <img id="banner-desk" src="/Content/images/Banner/Homepage_head-banner_desktop.jpg" alt="" />
     <img id="banner-mobile" src="~/Content/images/Banner/Homepage_head-banner_mobile.jpg" alt="" />
-    <div class="content">
-        <h1>@Model.Title</h1>
-        <button type="button">@Model.ButtonText</button>
-    </div>
+    <section>
+        <div id="banner-content">            
+            <h1>@Model.Title</h1>
+            <div id="learn-more">
+                <a href="#">@Model.ButtonText</a>
+            </div>
+        </div>
+    </section>
 </div>

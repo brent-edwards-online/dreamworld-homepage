@@ -4,6 +4,7 @@
     #whats-going-on {
         background-color: #F4F4F4;
         padding-bottom: 80px;
+        position: relative;
     }
 
     #whats-going-on .slick-content {
@@ -25,9 +26,21 @@
         font-size: 16pt;
         font-weight: bold;
     }
+
+    .carousel-button {
+        height: 70px;
+        width: 70px;
+        background-color: #0091d5;
+        position: absolute;
+        top: 50%;
+        transform: translate(0%,-50%);
+    }
+
+    .slick-container {
+        /*background-color: red;*/
+    }
 </style>
 
-@{
     <section id="whats-going-on" class="">
         <div class="slick-container" max-width="1080px">
             <div class="the-slick">
@@ -42,7 +55,9 @@
                 }
             </div>
         </div>
+        
+        <div class="carousel-button left">Left</div>
+        <div class="carousel-button right">Right</div>
     </section>
-}
 
 
