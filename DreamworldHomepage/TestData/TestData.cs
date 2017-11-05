@@ -92,7 +92,7 @@ namespace DreamworldHomepage.TestData
 
             // ***** YOUR FAVOURITE DREAMWORLD EXPERIENCES
             result.YourFavouriteDreamworldExperiences = new YourFavouriteDreamworldExperiencesViewModel();
-            result.YourFavouriteDreamworldExperiences.Title = "Your favourite dreamworld Experiences";
+            result.YourFavouriteDreamworldExperiences.Title = "Your Favourite Dreamworld Experiences";
             result.YourFavouriteDreamworldExperiences.Large0 = new FavouriteDreamWorldExperienceItem()
             {
                 Image = "/Content/images/YourFavouriteDreamworldExperiences/large-0.jpg",
