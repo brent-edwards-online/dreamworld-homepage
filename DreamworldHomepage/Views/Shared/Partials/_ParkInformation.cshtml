@@ -1,6 +1,7 @@
 ﻿<style>
     #park-information {
-
+        padding-left: 100px;
+        padding-right: 100px;
     }
 
     #park-information-content {
@@ -8,49 +9,46 @@
         overflow: auto;
     }
 
-    #park-information-content > p {
-        font-family: 'Amsi Pro';
-        text-align: center;
-        font-size: 25px;
-        color: #0091D5;
-        margin: 80px 0;
-        padding: 0;
-        line-height: 25px;
-    }
+        #park-information-content > p {
+            font-family: 'Amsi Pro';
+            text-align: center;
+            font-size: 25px;
+            color: #0091D5;
+            margin: 80px 0;
+            padding: 0;
+            line-height: 25px;
+        }
 
-    #park-information-content > p span{
-        font-weight: bold;
-    }
+            #park-information-content > p span {
+                font-weight: bold;
+            }
 
-    .information-items{
-
+    .information-items {
     }
 
     .information-item {
         margin: 0;
         font-family: 'Amsi Pro';
         width: 33.33%;
-        float: left;      
+        float: left;
         display: table;
-            
     }
 
-    .information-item > img{
-        height: 50px;
-        float: left;      
-    }
+        .information-item > img {
+            height: 50px;
+            float: left;
+        }
 
-    .information-item p {
-        color: #0091D5;
-        margin: auto 0;
-        display: table-cell; 
-        vertical-align: middle;
-    }
-
+        .information-item p {
+            color: #0091D5;
+            margin: auto 0;
+            display: table-cell;
+            vertical-align: middle;
+        }
 </style>
 
 <style>
-        #park-pricing {
+    #park-pricing {
         background-color: #C11D33;
         width: 335px;
         height: 380px;
@@ -59,8 +57,8 @@
         font-family: 'Amsi Pro';
         overflow: hidden;
         position: relative;
-        top: -65px;
         left: 60%;
+        top: -300px;
     }
 
     .pricing-details {
@@ -131,54 +129,57 @@
                 }
 </style>
 
-<section id="park-information">
-    <div id="park-information-content">
-        <p><span>Open now</span> until 6:30am</p>
-        <div class="information-items clearfix">
-            <div class="information-item clearfix">
-                <img src="~/Content/images/ParkInformation/icon_directions.svg" />
-                <p>Get Directions</p>
-            </div>
-            <div class="information-item ">
-                <img src="~/Content/images/ParkInformation/icon_ride height.svg" />
-                <p>Check Ride<br />Height Limits</p>
-            </div>
-            <div class="information-item">
-                <img src="~/Content/images/ParkInformation/icon_park map.svg" />
-                <p>Download<br />Park Map</p>
-            </div>
-        </div>
-    </div>
-    <div id="park-pricing">
-        <nav id="pricing-nav">
-            <ul>
-                <li><a href="#">1 DAY</a></li>
-                <li><a href="#">3 DAY</a></li>
-                <li><a href="#">7 DAY</a></li>
-                <li><a href="#">ANNUAL PASS</a></li>
-            </ul>
-        </nav>
-        <div class="pricing-details">
-            <div class="price">
-                <p class="price-label">Adults</p>
-                <p class="price-amount">$99</p>
-            </div>
-            <div class="price">
-                <p class="price-label">Children</p>
-                <p class="price-amount">$89</p>
-                <p></p>
-            </div>
-            <div class="price">
-                <p class="price-label">Pensioners</p>
-                <p class="price-amount">$89</p>
-            </div>
-            <div class="price">
-                <p class="price-label">Family<br><span>(2 adults and 2 children)</span></p>
-                <p class="price-amount">$320</p>
+<section id="park-information" style="height:300px">
+
+        <div id="park-information-content">
+            <p><span>Open now</span> until 6:30am</p>
+            <div class="information-items clearfix">
+                <div class="information-item clearfix">
+                    <img src="~/Content/images/ParkInformation/icon_directions.svg" />
+                    <p>Get Directions</p>
+                </div>
+                <div class="information-item ">
+                    <img src="~/Content/images/ParkInformation/icon_ride height.svg" />
+                    <p>Check Ride<br />Height Limits</p>
+                </div>
+                <div class="information-item">
+                    <img src="~/Content/images/ParkInformation/icon_park map.svg" />
+                    <p>Download<br />Park Map</p>
+                </div>
             </div>
         </div>
-        <div>
-            <a href="#" class="button">Buy Tickets</a>
+
+        <div id="park-pricing">
+            <nav id="pricing-nav">
+                <ul>
+                    <li><a href="#">1 DAY</a></li>
+                    <li><a href="#">3 DAY</a></li>
+                    <li><a href="#">7 DAY</a></li>
+                    <li><a href="#">ANNUAL PASS</a></li>
+                </ul>
+            </nav>
+            <div class="pricing-details">
+                <div class="price">
+                    <p class="price-label">Adults</p>
+                    <p class="price-amount">$99</p>
+                </div>
+                <div class="price">
+                    <p class="price-label">Children</p>
+                    <p class="price-amount">$89</p>
+                    <p></p>
+                </div>
+                <div class="price">
+                    <p class="price-label">Pensioners</p>
+                    <p class="price-amount">$89</p>
+                </div>
+                <div class="price">
+                    <p class="price-label">Family<br><span>(2 adults and 2 children)</span></p>
+                    <p class="price-amount">$320</p>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="button">Buy Tickets</a>
+            </div>
         </div>
     </div>
 </section>

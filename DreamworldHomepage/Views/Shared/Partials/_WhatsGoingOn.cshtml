@@ -3,7 +3,7 @@
 <style>
     #whats-going-on {
         background-color: #F4F4F4;
-        padding-bottom: 80px;
+        /*padding-bottom: 80px;*/
         position: relative;
     }
 
@@ -42,7 +42,7 @@
         }
 
     .whats-going-on-slick {
-        border: 1px black solid;
+        /*border: 1px black solid;*/
     }
 
     .slick-slide {
@@ -51,25 +51,34 @@
 
     #what-left, #what-right {
         background-color: #0091d5;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
     }
 </style>
 
-<section id="whats-going-on" class="">
-    <div id="what-left" class="carousel-button left">Left</div>
-    <div id="what-right" class="carousel-button right">Right</div>
-
+<section id="whats-going-on">
     <div class="whats-going-on-slick-container">
         <h1>What's going on?</h1>
-        <div class="whats-going-on-slick">
+    </div>
 
-            @foreach (var item in Model.Items)
-            {
-                <div class="slick-content">
-                    <img src="@item.Image" />
-                    <h2>@item.DateText</h2>
-                    <h3 style="color:@item.Color">@item.Title</h3>
-                </div>
-            }
+    <div style="width: 100%; position: relative">
+        <div class="whats-going-on-slick-container">
+            <div id="what-left" class="carousel-button left" >Left</div>
+            <div id="what-right" class="carousel-button right">Right</div>
+
+            <div class="whats-going-on-slick">
+
+                @foreach (var item in Model.Items)
+                {
+                    <div class="slick-content">
+                        <img src="@item.Image" />
+                        <h2>@item.DateText</h2>
+                        <h3 style="color:@item.Color">@item.Title</h3>
+                    </div>
+                }
+            </div>
         </div>
     </div>
 </section>
