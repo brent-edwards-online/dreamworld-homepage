@@ -24,6 +24,7 @@ namespace DreamworldHomepage
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
+                      "~/Content/font-awesome/font-awesome.css",
                       "~/Content/bootstrap.css",
                       "~/Content/global.css",
                       "~/Content/dw.styles.css",

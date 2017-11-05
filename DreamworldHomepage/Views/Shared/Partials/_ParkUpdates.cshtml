@@ -33,7 +33,6 @@
     
     .park-updates-slick .slick-slide {
         background-color: #EAEAEA;
-        border: solid red 1px;
         padding-left: 10px;
         height:250px;
 
@@ -41,14 +40,22 @@
 
     #update-left, #update-right {
         background-color: #4E20A1;
+        color: #ffffff;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        text-align: center;
+        font-size: 30px;
+        line-height: 70px;
     }
 </style>
 
 @{
     <section id="park-updates">
         <div style="width:100%">
-            <div id="update-left" class="carousel-button left">Left</div>
-            <div id="update-right" class="carousel-button right">Right</div>
+            <div id="update-left" class="carousel-button left"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+            <div id="update-right" class="carousel-button right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
 
             <div class="park-updates-slick-container">
                 <div class="park-updates-slick">
