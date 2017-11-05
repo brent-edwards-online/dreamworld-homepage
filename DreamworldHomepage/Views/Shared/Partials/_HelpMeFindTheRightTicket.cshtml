@@ -1,6 +1,7 @@
 ﻿<style>
     #find-right-ticket {
         text-align:center;
+        margin-bottom: 50px;
     }
 
     #find-right-ticket h1 {
@@ -9,55 +10,219 @@
         color: #2A3037;
     }
 
-    .slick-ticket-content {
+    /*.slick-ticket-content {
         background-color: #ffffff;
         width: 250px;
-    }
+    }*/
 
     .slick-ticket-container{
         margin-left: 100px;
         margin-right: 100px;
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-top: 20px;
     }
     
+    /*.clearfix {
+        overflow: auto;
+    }
 
+    h1, h2, h3, p, a {
+        font-family: 'Amsi Pro';
+        padding: 0;
+        margin: 0;
+    }*/
+
+    .ticket {
+        width: 330px;
+        height: 510px;
+        color: #ffffff;
+        position: relative;
+        border-radius: 5px;
+        /*box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);*/
+    }
+
+    .ticket-heading {
+        height: 40px;
+        padding: 10px;
+        color: #ffffff;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+        .ticket-heading h2 {
+            font-size: 17px;
+            font-weight: bold;
+            padding-top: 4px;
+        }
+
+        .ticket-heading h3 {
+            font-size: 14px;
+            padding-top: 3px;
+        }
+
+    .ticket-content {
+        background-color: #ffffff;
+        border-radius: 5px;
+        text-align: center;
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
+
+    .ticket-description {
+        padding-top: 40px;
+        color: #000000;
+    }
+
+    .ticket-date {
+        padding-top: 90px;
+        padding-bottom: 52px;
+    }
+
+    .ticket-image {
+    }
+
+        .ticket-image img {
+            float: left;
+        }
+
+        .ticket-image p {
+            color: #000000;
+        }
+
+    div.button {
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #ffffff;
+        padding: 18px;
+        border-radius: 3px;
+    }
+
+    .ticket-data a {
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .ticket-group-menu{
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .ticket-group-menu > ul {
+        list-style: none;
+
+    }
+
+    .ticket-group-menu > ul > li {
+        display: inline;
+        border: solid 1px #000000;
+        padding: 10px;
+        border-radius: 3px;
+        width: 200px;
+    }
+
+    .ticket-group-menu > ul > li > a {
+        text-decoration: none;
+        color: #000000;
+    }
 </style>
+
 <section id="find-right-ticket" class="">
     <h1>Help me find the right ticket</h1>
 
+    <div class="ticket-group-menu">
+        <ul>
+            <li><a href="#">Tickets</a></li>
+            <li><a href="#">Passes</a></li>
+            <li><a href="#">Packages</a></li>
+        </ul>
+    </div>
+
     <div class="slick-ticket-container">
         <div class="help-me-slick">
-            <div class="slick-ticket-content">                
-                <h2>Exclusive Offer</h2>
-                <h3>Buy 3 and get the forth pass free</h3>
-                <img src="/Content/images/HelpMeFindTheRightTicket/icon_ticket_season pass.svg" width="100"/>
-                <p><span>From</span>$7400</p>
-                <p>Unlimited entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck</p>
-                <p>Until 30 June2018</p>
-                <a href="#">Select</a>
+            <div class="ticket" style="background-color: #C11D33">
+                <div class="ticket-heading" style="background-color: #C11D33">
+                    <h2>Exclusive offer:</h2>
+                    <h3>Buy 3 and get forth pass free</h3>
+                </div>
+                <div class="ticket-content">
+                    <div class="ticket-image clearfix">
+                        <img src="~/Content/images/HelpMeFindTheRightTicket/icon_ticket_season pass.svg" width="120" />
+                        <p><span>From</span><br />$7400</p>
+                    </div>
+                    <div class="ticket-data">
+                        <p class="ticket-description">Unlimited entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck</p>
+                        <p class="ticket-date" style="color: #C11D33">Until 30 June2018</p>
+                        <div class="button" style="background-color: #C11D33">
+                            <a href="#">Select</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="slick-ticket-content">                
-                <img src="/Content/images/HelpMeFindTheRightTicket/icon_ticket_annual pass.svg" width="100" />                
-                <p><span>From</span>$10900</p>
-                <p>Unlimited entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck</p>
-                <p>For 12 months from first visit</p>
-                <a href="#">Select</a>
-            </div>            
-            <div class="slick-ticket-content">
-                <h2>Exclusive Offer</h2>
-                <h3>Buy 3 and get the forth pass free</h3>
-                <img src="/Content/images/HelpMeFindTheRightTicket/icon_ticket_season pass.svg" width="100" />
-                <p><span>From</span>$7400</p>
-                <p>Unlimited entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck</p>
-                <p>Until 30 June2018</p>
-                <a href="#">Select</a>
+
+            <div class="ticket" style="background-color: ##4E20A1">
+                <div class="ticket-heading" style="background-color: ##4E20A1">
+                    <h2>Exclusive offer:</h2>
+                    <h3>Buy 3 and get forth pass free</h3>
+                </div>
+                <div class="ticket-content">
+                    <div class="ticket-image clearfix">
+                        <img src="~/Content/images/HelpMeFindTheRightTicket/icon_ticket_annual pass.svg" width="120" />
+                        <p><span>From</span><br />$10900</p>
+                    </div>
+                    <div class="ticket-data">
+                        <p class="ticket-description">Unlimited entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck</p>
+                        <p class="ticket-date" style="color: ##4E20A1">Until 30 June2018</p>
+                        <div class="button" style="background-color: #4E20A1">
+                            <a href="#">Select</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="slick-ticket-content">
-                <img src="/Content/images/HelpMeFindTheRightTicket/icon_ticket_annual pass.svg" width="100" />
-                <p><span>From</span>$10900</p>
-                <p>Unlimited entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck</p>
-                <p>For 12 months from first visit</p>
-                <a href="#">Select</a>
-            </div>            
+            <div class="ticket" style="background-color: #C11D33">
+                <div class="ticket-heading" style="background-color: #C11D33">
+                    <h2>Exclusive offer:</h2>
+                    <h3>Buy 3 and get forth pass free</h3>
+                </div>
+                <div class="ticket-content">
+                    <div class="ticket-image clearfix">
+                        <img src="~/Content/images/HelpMeFindTheRightTicket/icon_ticket_season pass.svg" width="120" />
+                        <p><span>From</span><br />$7400</p>
+                    </div>
+                    <div class="ticket-data">
+                        <p class="ticket-description">Unlimited entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck</p>
+                        <p class="ticket-date" style="color: #C11D33">Until 30 June2018</p>
+                        <div class="button" style="background-color: #C11D33">
+                            <a href="#">Select</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ticket" style="background-color: ##4E20A1">
+                <div class="ticket-heading" style="background-color: ##4E20A1">
+                    <h2>Exclusive offer:</h2>
+                    <h3>Buy 3 and get forth pass free</h3>
+                </div>
+                <div class="ticket-content">
+                    <div class="ticket-image clearfix">
+                        <img src="~/Content/images/HelpMeFindTheRightTicket/icon_ticket_annual pass.svg" width="120" />
+                        <p><span>From</span><br />$10900</p>
+                    </div>
+                    <div class="ticket-data">
+                        <p class="ticket-description">Unlimited entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck</p>
+                        <p class="ticket-date" style="color: ##4E20A1">Until 30 June2018</p>
+                        <div class="button" style="background-color: #4E20A1">
+                            <a href="#">Select</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

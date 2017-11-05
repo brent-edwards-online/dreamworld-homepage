@@ -2,6 +2,12 @@
   overflow: auto;
 }
 
+h1, h2, h3, p,a {
+    font-family: 'Amsi Pro';
+    padding: 0;
+    margin: 0;
+}
+
 section {
     margin-left: auto;
     margin-right: auto;
