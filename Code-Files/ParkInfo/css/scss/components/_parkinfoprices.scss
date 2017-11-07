@@ -1,0 +1,56 @@
+#park-info-section {
+  position: relative;
+  top: -60px;
+  height: 320px;
+
+  #park-prices-section {
+    height: 380px;
+    position: absolute;
+    right: 0;
+
+    #prices-menu {
+      color: #ffff00;
+      font-size: 14;
+      font-weight: bold;
+      border-bottom: solid 1px $col-white;
+      height: 60px;
+      line-height: 60px;
+
+      ul {
+        list-style: none;
+      }
+
+      ul > li {
+        display: inline-block;
+        padding-left: $pad-5;
+        padding-right: $pad-5;
+      }
+
+      ul > li > a {
+        text-decoration: none;
+        color: $col-white;
+      }
+    }
+
+    
+  }
+
+  #park-hours-section{
+      color: $col-blue;
+      position: relative;
+      top: 60px;
+      z-index: -1;
+      height: 320px;
+
+      .park-info {
+        display: inline-block;
+        width: $percent-33;
+
+        img {
+          float: left;
+          width: $dist-xl;
+        }
+      } 
+  }
+}
+
