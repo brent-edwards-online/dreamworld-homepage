@@ -1,99 +1,43 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <style>
-    * {
-        padding: 0;
-        margin: 0;
-    }
-
-    #banner img{			
-	    width: 100%;
-    	height: auto;
-	}
-
-    .nav-container{
-        width: 100%;
-        /*background-color: #2A3037;*/
-        height: 160px;
-    }
-
-    #main-navigation {
-        background-color: red;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        max-width: 1280px;
-        text-align: center;
-        z-index: 10;
-        position: fixed;
-        height: 160px;
-    }
-
-    #main-navigation > ul {
-        list-style: none;
-    }
-
-    #main-navigation > ul > li {
-        cursor: pointer;
-    }
-
-    #main-navigation > ul > li {
-        float: left;
-        cursor: pointer;
-        /*background-color: red;
-        border: 1px solid green;*/
-        margin: 0 20px;
-        line-height: 160px;
-    }
-
-    #main-navigation > ul > li > a{
-        font-family: 'Amsi Pro';
-        font-size: 20px;
-        font-weight: bold;
-        color: #ffffff;
-
-        text-decoration: none;
-    }
-
-    #main-navigation > img {
-        width: 166px;
-        display: inline-block;
-    }
-
-    .dropdown-content{
-        display: none;
-    }
-
-</style>
-
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div id="nav-container" >
+            <div id="main-navigation">                
+                <div id="logo">
+                    <img src="images/Dreamworld_logo.svg" alt="Dreamworld logo"/>                
+                </div>
+                <div id="main-menu">
+                    <ul>
+                        <li><a href="">PARK INFO</a>
+                            <div class="dropdown-content">
+                                Park Info
+                            </div>
+                        </li>
+                        <li><a href="">RIDES</a>
+                            <div class="dropdown-content">
+                                Rides
+                            </div>
+                        </li>
+                        <li><a href="">ATTRACTIONS</a></li>
+                        <li><a href="">GROUP EVENTS</a></li>
+                        <li><a href="">FOOD &amp; SHOPPING</a></li>
+                        <li><a href="">SCHOOLS</a></li>
+                        <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div id="button-container">
+                    
+                    <div id="button" class="width-130 center-text height-45 radius-5">
+                        <a href="#">BUY TICKETS</a>
+                    </div>        
+                </div>
+            </div>
+            <div id="search-container">
 
-    <div class="nav-container">
-        <div style="width:1280px;margin: 0 auto">
-            <nav id="main-navigation">
-                <img src="images/Dreamworld_logo.svg" alt="Dreamworld logo"/>
-                <ul>
-                    <li><a href="">PARK INFO</a>
-                        <div class="dropdown-content">
-                            Park Info
-                        </div>
-                    </li>
-                    <li><a href="">RIDES</a>
-                        <div class="dropdown-content">
-                            Rides
-                        </div>
-                    </li>
-                    <li><a href="">ARRACTIONS</a></li>
-                    <li><a href="">GROUP EVENTS</a></li>
-                    <li><a href="">FOOD &amp; SHOPPING</a></li>
-                    <li><a href="">SCHOOLS</a></li>
-                    <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                </ul>
-                <a href="#">BUY TICKETS</a>
-            </nav>
-        </div>
+            </div>
     </div>
 <div id="banner">
     <img id="banner-desk" src="/images/Homepage_head-banner_desktop.jpg" alt="" />

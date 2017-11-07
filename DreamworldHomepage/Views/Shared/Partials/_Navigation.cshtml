@@ -11,14 +11,15 @@
     }
 
     #main-navigation > ul > li {
-        float: left;
-        text-decoration: none;
+        float: left;        
         padding: 0 10px;
     }
 
     #main-navigation > ul > li > a {
         color: #ffffff;
         font-family: 'Amsi Pro';
+        text-transform: uppercase;
+        text-decoration: none;
     }
 </style>
 
@@ -27,7 +28,7 @@
         <ul>
             @foreach (var item in Model.MenuItems)
             {
-                <li><a href="">@item.Text</a></li>
+                <li><a href="#">@item.Text</a></li>
             }
         </ul>
     }
