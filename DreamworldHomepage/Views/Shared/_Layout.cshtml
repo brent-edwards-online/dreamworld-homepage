@@ -8,14 +8,13 @@
     @Styles.Render("~/Content/slick")
     @Scripts.Render("~/bundles/modernizr")
 
-</head>
-<body>    
-    @RenderBody()    
-
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/slick")
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     @RenderSection("scripts", required: false)
+</head>
+<body>
+    @RenderBody()
 </body>
 </html>
