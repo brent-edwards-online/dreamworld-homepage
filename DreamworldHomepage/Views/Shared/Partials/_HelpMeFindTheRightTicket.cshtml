@@ -21,7 +21,7 @@
                             "Unlimited entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck",
                             "Until 30 June 2018",
                             "Buy 3 and get fourth pass free"
-                        )
+                            )
                         
                         @Ticket(
                             "purple",
@@ -29,7 +29,7 @@
                             109,
                             "Unlimited entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck",
                             "For 12 months from first visit"
-                        )
+                            )
                         
                         @Ticket(
                             "blue",
@@ -37,7 +37,7 @@
                             75,
                             "1 day entry to Dreamworld and WhiteWater World",
                             "For 12 months from first visit"
-                        )
+                            )
                         
                         @Ticket(
                             "red",
@@ -45,7 +45,7 @@
                             75,
                             "3 days entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck",
                             "For 12 months from first visit"
-                        )
+                            )
                         
                         @Ticket(
                             "purple",
@@ -53,13 +53,29 @@
                             95,
                             "7 days entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck",
                             "For 12 months from first visit"
-                        )
+                            )
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<script>
+    $(function() {
+        $(".help-me-slick").slick({
+            centerMode: false,
+            arrows: false,
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: true,
+            centerMode: false,
+            centerPadding: 0,
+            initialSlide: 0
+        });
+    });
+</script>
 
 @helper Ticket(string color, string ticketType, int fromPrice, string description, string validUntil, string exclusiveOffer = null)
 {
