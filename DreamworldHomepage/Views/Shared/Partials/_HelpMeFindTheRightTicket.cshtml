@@ -14,94 +14,83 @@
 
                 <div class="slick-ticket-container">
                     <div class="help-me-slick">
-                        <div class="ticket" style="background-color: #C11D33">
-                            <div class="ticket-heading" style="background-color: #C11D33">
-                                <h2>Exclusive offer:</h2>
-                                <h3>Buy 3 and get forth pass free</h3>
-                            </div>
-                            <div class="ticket-content">
-                                <div class="ticket-image clearfix">
-                                    <img src="~/Content/images/HelpMeFindTheRightTicket/icon_ticket_season pass.svg" width="120" />
-                                    <p>
-                                        <span>From</span><br />$7400
-                                    </p>
-                                </div>
-                                <div class="ticket-data">
-                                    <p class="ticket-description">Unlimited entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck</p>
-                                    <p class="ticket-date" style="color: #C11D33">Until 30 June2018</p>
-                                    <div class="button" style="background-color: #C11D33">
-                                        <a href="#">Select</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="ticket" style="background-color: #4E20A1">
-                            <div class="ticket-heading" style="background-color: #4E20A1">
-                                <h2>Exclusive offer:</h2>
-                                <h3>Buy 3 and get forth pass free</h3>
-                            </div>
-                            <div class="ticket-content">
-                                <div class="ticket-image clearfix">
-                                    <img src="~/Content/images/HelpMeFindTheRightTicket/icon_ticket_annual pass.svg" width="120" />
-                                    <p>
-                                        <span>From</span><br />$10900
-                                    </p>
-                                </div>
-                                <div class="ticket-data">
-                                    <p class="ticket-description">Unlimited entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck</p>
-                                    <p class="ticket-date" style="color: #4E20A1">Until 30 June2018</p>
-                                    <div class="button" style="background-color: #4E20A1">
-                                        <a href="#">Select</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ticket" style="background-color: #C11D33">
-                            <div class="ticket-heading" style="background-color: #C11D33">
-                                <h2>Exclusive offer:</h2>
-                                <h3>Buy 3 and get forth pass free</h3>
-                            </div>
-                            <div class="ticket-content">
-                                <div class="ticket-image clearfix">
-                                    <img src="~/Content/images/HelpMeFindTheRightTicket/icon_ticket_season pass.svg" width="120" />
-                                    <p>
-                                        <span>From</span><br />$7400
-                                    </p>
-                                </div>
-                                <div class="ticket-data">
-                                    <p class="ticket-description">Unlimited entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck</p>
-                                    <p class="ticket-date" style="color: #C11D33">Until 30 June2018</p>
-                                    <div class="button" style="background-color: #C11D33">
-                                        <a href="#">Select</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="ticket" style="background-color: #4E20A1">
-                            <div class="ticket-heading">
-
-                            </div>
-                            <div class="ticket-content">
-                                <div class="ticket-image clearfix">
-                                    <img src="~/Content/images/HelpMeFindTheRightTicket/icon_ticket_annual pass.svg" width="120" />
-                                    <p>
-                                        <span>From</span><br />$10900
-                                    </p>
-                                </div>
-                                <div class="ticket-data">
-                                    <p class="ticket-description">Unlimited entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck</p>
-                                    <p class="ticket-date" style="color: # #4E20A1">Until 30 June2018</p>
-                                    <div class="button" style="background-color: #4E20A1">
-                                        <a href="#">Select</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @Ticket(
+                            "red",
+                            "Season pass",
+                            74,
+                            "Unlimited entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck",
+                            "Until 30 June 2018",
+                            "Buy 3 and get fourth pass free"
+                        )
+                        
+                        @Ticket(
+                            "purple",
+                            "Annual pass",
+                            109,
+                            "Unlimited entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck",
+                            "For 12 months from first visit"
+                        )
+                        
+                        @Ticket(
+                            "blue",
+                            "1 day ticket",
+                            75,
+                            "1 day entry to Dreamworld and WhiteWater World",
+                            "For 12 months from first visit"
+                        )
+                        
+                        @Ticket(
+                            "red",
+                            "3 day ticket",
+                            75,
+                            "3 days entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck",
+                            "For 12 months from first visit"
+                        )
+                        
+                        @Ticket(
+                            "purple",
+                            "7 day ticket",
+                            95,
+                            "7 days entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck",
+                            "For 12 months from first visit"
+                        )
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+@helper Ticket(string color, string ticketType, int fromPrice, string description, string validUntil, string exclusiveOffer = null)
+{
+    <div class="ticket-outer">
+        <div class="ticket @color">
+            @if (!string.IsNullOrEmpty(exclusiveOffer))
+            {
+                <div class="ticket-heading">
+                    <h2>Exclusive offer:</h2>
+                    <h3>Buy 3 and get forth pass free</h3>
+                </div>
+            }
+            <div class="ticket-content">
+                <div class="ticket-image clearfix">
+                    <img src="~/Content/images/HelpMeFindTheRightTicket/icon_ticket_annual pass.svg" width="120" />
+                    <p>
+                        <span>From</span><br />$@fromPrice<small>00</small>
+                    </p>
+                </div>
+                <div class="ticket-data">
+                    <p class="ticket-description">
+                        @description
+                    </p>
+                    <p class="ticket-date">
+                        @validUntil
+                    </p>
+                    <div class="button">
+                        <a href="#">Select</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
