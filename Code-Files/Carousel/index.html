@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <title>Park Info</title>    
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <h1>This should be green text</h1>
+    <p>This should be green text</p>
+
+    <div style="width:500px;height:300px;background-color:blue">
+        <div id="carousel">
+            <div>your content</div>
+            <div>your content</div>
+            <div>your content</div>
+        </div>
+    </div>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./js/likwid-carousel.js"></script>
+
+    <script>
+        $( document ).ready(function() {
+            $("#carousel").likwidcarousel({
+                w: "100%",
+                h: "50px",
+                c: "#ddd121",
+                cards: 4
+            });
+        });
+    </script>
+</body>
+</html>

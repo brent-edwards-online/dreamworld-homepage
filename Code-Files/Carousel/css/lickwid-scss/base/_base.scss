@@ -1,0 +1,27 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Amsi Pro';
+}
+
+h1, h2, h3, h4, h5, h6, a, p {
+  
+}
+
+/*ClearFix*/
+.cf:before, .cf:after{
+  content:'';
+  display: table;
+}
+
+.cf:after{
+  clear:both;
+}
+
+.cf{
+  zoom:1;
+}
+.centre-div {
+  margin-left: auto;
+  margin-right: auto;
+}
