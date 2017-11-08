@@ -63,27 +63,34 @@
 </style>
 
 <section id="whats-going-on">
-    <div class="whats-going-on-slick-container">
-        <h1>What's going on?</h1>
-    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
 
-    <div style="width: 100%; position: relative">
-        <div class="whats-going-on-slick-container">
-            <div id="what-left" class="carousel-button left" ><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
-            <div id="what-right" class="carousel-button right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                <div class="whats-going-on-slick-container">
+                    <h1>What's going on?</h1>
+                </div>
 
-            <div class="whats-going-on-slick">
+                <div style="width: 100%; position: relative">
+                    <div class="whats-going-on-slick-container">
+                        <div id="what-left" class="carousel-button left"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+                        <div id="what-right" class="carousel-button right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
 
-                @foreach (var item in Model.Items)
-                {
-                    <div class="slick-content">
-                        <img src="@item.Image" />
-                        <div style="padding:20px">
-                            <h2>@item.DateText</h2>
-                            <h3 style="color:@item.Color">@item.Title</h3>
+                        <div class="whats-going-on-slick">
+
+                            @foreach (var item in Model.Items)
+                            {
+                                <div class="slick-content">
+                                    <img src="@item.Image" />
+                                    <div style="padding:20px">
+                                        <h2>@item.DateText</h2>
+                                        <h3 style="color:@item.Color">@item.Title</h3>
+                                    </div>
+                                </div>
+                            }
                         </div>
                     </div>
-                }
+                </div>
             </div>
         </div>
     </div>
