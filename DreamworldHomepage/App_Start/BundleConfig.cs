@@ -26,8 +26,8 @@ namespace DreamworldHomepage
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/font-awesome/font-awesome.css",
                       "~/Content/bootstrap.css",
-                      "~/Content/global.css",
-                      "~/Content/dw.styles.css",
+                      //"~/Content/global.css",
+                      //"~/Content/dw.styles.css",
                       "~/Content/site.css",
 					  "~/Content/styles/main.min.css"
 					  ));
