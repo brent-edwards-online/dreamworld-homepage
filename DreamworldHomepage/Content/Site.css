@@ -12,7 +12,7 @@ section {
     margin-left: auto;
     margin-right: auto;
     /*border: solid 1px #000;*/
-    max-width: 1280px;
+    /*max-width: 1280px;*/
 }
 
 .carousel-button {
@@ -40,6 +40,10 @@ section {
     border-radius: 5px 0px 0px 5px;
 }
 
+.container {
+    max-width: 1080px;
+}
+
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
     section {
@@ -53,3 +57,5 @@ section {
         width: 100%;
     }
 }
+
+
