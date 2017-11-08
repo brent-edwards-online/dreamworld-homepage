@@ -37,3 +37,16 @@
 
     </div>
 </div>
+
+<script>
+    $(function () {
+        $(window).scroll(function (event) {
+            if ($(window).scrollTop() > 0) {
+                $('#nav-container').css('background-color', '#2A3037');
+            }
+            else {
+                $('#nav-container').css('background-color', 'transparent');
+            }
+        });
+    });
+</script>
