@@ -1,0 +1,141 @@
+﻿#find-right-ticket {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#find-right-ticket h1 {
+    font-family: 'Amsi Pro Black';
+    font-size: 40px;
+    color: #2A3037;
+    text-transform: none;
+    color: #0a0a0a;
+}
+
+/*.slick-ticket-content {
+        background-color: #ffffff;
+        width: 250px;
+    }*/
+
+.slick-ticket-container {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 20px;
+}
+
+/*.clearfix {
+        overflow: auto;
+    }
+
+    h1, h2, h3, p, a {
+        font-family: 'Amsi Pro';
+        padding: 0;
+        margin: 0;
+    }*/
+
+.ticket {
+    width: 330px;
+    height: 510px;
+    color: #ffffff;
+    position: relative;
+    border-radius: 5px;
+    /*box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);*/
+}
+
+.ticket-heading {
+    height: 60px;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.ticket-heading h2 {
+    font-size: 17px;
+    font-weight: bold;
+    padding-top: 4px;
+    line-height: normal;
+}
+
+.ticket-heading h3 {
+    font-size: 14px;
+    padding-top: 3px;
+}
+
+.ticket-content {
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.ticket-description {
+    padding-top: 40px;
+    color: #000000;
+}
+
+.ticket-date {
+    padding-top: 75px;
+    padding-bottom: 45px;
+}
+
+.ticket-image {
+}
+
+.ticket-image img {
+    float: left;
+}
+
+.ticket-image p {
+    color: #000000;
+}
+
+div.button {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 18px;
+    border-radius: 3px;
+}
+
+.ticket-data a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.ticket-group-menu {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.ticket-group-menu > ul {
+    list-style: none;
+}
+
+.ticket-group-menu > ul > li {
+    display: inline-block;
+    border: solid 2px #0a0a0a;
+    border-radius: 5px;
+}
+
+.ticket-group-menu > ul > li > a {
+    text-decoration: none;
+    color: #0a0a0a;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 36px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.help-me-slick .slick-slide {
+    margin: 10px;
+}

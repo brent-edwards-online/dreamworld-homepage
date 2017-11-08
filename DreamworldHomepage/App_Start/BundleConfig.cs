@@ -28,7 +28,9 @@ namespace DreamworldHomepage
                       "~/Content/bootstrap.css",
                       "~/Content/global.css",
                       "~/Content/dw.styles.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+					  "~/Content/styles/main.min.css"
+					  ));
 
             bundles.Add(new ScriptBundle("~/bundles/slick").Include(
                       "~/Scripts/slick.js"));
