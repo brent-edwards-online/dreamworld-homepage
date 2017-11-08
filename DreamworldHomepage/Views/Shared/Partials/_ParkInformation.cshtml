@@ -1,190 +1,120 @@
-﻿<style>
-    #park-information {
-        padding-left: 100px;
-        padding-right: 100px;
-        background-color: #F4F4F4;
-        height:300px;
-        position:relative;
-    }
-
-    #park-information-content {
-        width: 60%;
-        overflow: auto;
-    }
-
-        #park-information-content > p {
-            font-family: 'Amsi Pro';
-            text-align: center;
-            font-size: 25px;
-            color: #0091D5;
-            margin: 80px 0;
-            padding: 0;
-            line-height: 25px;
-        }
-
-            #park-information-content > p span {
-                font-weight: bold;
-            }
-
-    .information-items {
-    }
-
-    .information-item {
-        margin: 0;
-        font-family: 'Amsi Pro';
-        width: 33.33%;
-        float: left;
-        display: table;
-    }
-
-        .information-item > img {
-            height: 50px;
-            float: left;
-        }
-
-        .information-item p {
-            color: #0091D5;
-            margin: auto 0;
-            display: table-cell;
-            vertical-align: middle;
-        }
-</style>
-
-<style>
-    #park-pricing {
-        background-color: #C11D33;
-        width: 335px;
-        height: 380px;
-        border-radius: 5px;
-        color: #ffffff;
-        font-family: 'Amsi Pro';
-        overflow: hidden;
-        position: absolute;
-        right: 100px;
-        top: -65px;
-    }
-
-    .pricing-details {
-        padding: 5px;
-        margin-bottom: 40px;
-        border-top: solid 1px #ffffff;
-    }
-
-    .button {
-        font-family: 'Amsi Pro';
-        font-size: 20px;
-        font-weight: bold;
-        text-decoration: none;
-        background-color: #ffffff;
-        color: #C11D33;
-        width: 100%;
-        padding: 2px 6px 2px 6px;
-        border-radius: 3px;
-    }
-
-    p {
-        margin: 0;
-        padding: 0;
-        font-size: 18px;
-    }
-
-    .price {
-        clear: both;
-        margin-right: 10px;
-        margin-left: 10px;
-        padding: 10px 0px;
-    }
-
-    .price-label {
-        float: left;
-        font-family: 'Amsi Pro';
-        font-size: 18px;
-    }
-
-        .price-label span {
-            font-size: 12px;
-        }
-
-    .price-amount {
-        float: right;
-        font-family: 'Amsi Pro';
-        font-size: 18px;
-        font-weight: bold;
-    }
-
-    #pricing-nav {
-        padding: 15px 0px;
-    }
-
-        #pricing-nav > ul {
-            margin-top: 5px;
-            margin-bottom: 4px;
-        }
-
-            #pricing-nav > ul > li {
-                display: inline;
-                padding: 0px 3px;
-            }
-
-                #pricing-nav > ul > li > a {
-                    color: #ffffff;
-                    font-family: 'Amsi Pro';
-                    font-size: 14px;
-                    text-decoration: none;
-                }
-</style>
-
-<section id="park-information">
-
-        <div id="park-information-content">
-            <p><span>Open now</span> until 6:30am</p>
-            <div class="information-items clearfix">
-                <div class="information-item clearfix">
-                    <img src="~/Content/images/ParkInformation/icon_directions.svg" />
-                    <p>Get Directions</p>
-                </div>
-                <div class="information-item ">
-                    <img src="~/Content/images/ParkInformation/icon_ride height.svg" />
-                    <p>Check Ride<br />Height Limits</p>
-                </div>
-                <div class="information-item">
-                    <img src="~/Content/images/ParkInformation/icon_park map.svg" />
-                    <p>Download<br />Park Map</p>
+﻿<section id="park-information-section" class="color-beige">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="park-info-section" class="col-12 centre-div">
+                    <div id="park-prices-section" class="col-4 color-red border-radius-5">
+                        <div id="prices-menu" class="center-text">
+                            <ul>
+                                <li><a href="#">1 DAY</a></li>
+                                <li><a href="#">2 DAY</a></li>
+                                <li><a href="#">3 DAY</a></li>
+                                <li><a href="#">ANNUAL PASS</a></li>
+                            </ul>
+                        </div>
+                        <div id="price-content">
+                            <div id="pricing-details">
+                                <div class="price">
+                                    <p class="price-label">Adults</p>
+                                    <p class="price-amount">$99</p>
+                                </div>
+                                <div class="price">
+                                    <p class="price-label">Children</p>
+                                    <p class="price-amount">$89</p>
+                                    <p></p>
+                                </div>
+                                <div class="price">
+                                    <p class="price-label">Pensioners</p>
+                                    <p class="price-amount">$89</p>
+                                </div>
+                                <div class="price">
+                                    <p class="price-label">Family<br><span>(2 adults and 2 children)</span></p>
+                                    <p class="price-amount">$320</p>
+                                </div>
+                            </div>
+                            <div class="button">
+                                Buy Tickets
+                            </div>
+                        </div>
+                    </div>
+                    <div id="park-hours-section" class="color-beige">
+                        <div>
+                            <h1><span>Open now</span> until 6:30pm</h1>
+                        </div>
+                        <div class="col-8">
+                            <div class="park-info color-yellow">
+                                <img src="images/icon_directions.svg" alt="Directions" />
+                                <p>Get Directions</p>
+                            </div>
+                            <div class="park-info color-red">
+                                <img src="images/icon_ride height.svg" alt="Ride Height" />
+                                <p>Check Ride<br />Height Limits</p>
+                            </div>
+                            <div class="park-info color-blue">
+                                <img src="images/icon_park map.svg" alt="Park Map" />
+                                <p>Download<br />Park Map</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div id="park-pricing">
-            <nav id="pricing-nav">
-                <ul>
-                    <li><a href="#">1 DAY</a></li>
-                    <li><a href="#">3 DAY</a></li>
-                    <li><a href="#">7 DAY</a></li>
-                    <li><a href="#">ANNUAL PASS</a></li>
-                </ul>
-            </nav>
-            <div class="pricing-details">
-                <div class="price">
-                    <p class="price-label">Adults</p>
-                    <p class="price-amount">$99</p>
-                </div>
-                <div class="price">
-                    <p class="price-label">Children</p>
-                    <p class="price-amount">$89</p>
-                    <p></p>
-                </div>
-                <div class="price">
-                    <p class="price-label">Pensioners</p>
-                    <p class="price-amount">$89</p>
-                </div>
-                <div class="price">
-                    <p class="price-label">Family<br><span>(2 adults and 2 children)</span></p>
-                    <p class="price-amount">$320</p>
-                </div>
-            </div>
-            <div>
-                <a href="#" class="button">Buy Tickets</a>
-            </div>
-        </div>
-
+    </div>
 </section>
+
+
+
+@*<section id="park-information">
+
+            <div id="park-information-content">
+                <p><span>Open now</span> until 6:30am</p>
+                <div class="information-items clearfix">
+                    <div class="information-item clearfix">
+                        <img src="~/Content/images/ParkInformation/icon_directions.svg" />
+                        <p>Get Directions</p>
+                    </div>
+                    <div class="information-item ">
+                        <img src="~/Content/images/ParkInformation/icon_ride height.svg" />
+                        <p>Check Ride<br />Height Limits</p>
+                    </div>
+                    <div class="information-item">
+                        <img src="~/Content/images/ParkInformation/icon_park map.svg" />
+                        <p>Download<br />Park Map</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="park-pricing">
+                <nav id="pricing-nav">
+                    <ul>
+                        <li><a href="#">1 DAY</a></li>
+                        <li><a href="#">3 DAY</a></li>
+                        <li><a href="#">7 DAY</a></li>
+                        <li><a href="#">ANNUAL PASS</a></li>
+                    </ul>
+                </nav>
+                <div class="pricing-details">
+                    <div class="price">
+                        <p class="price-label">Adults</p>
+                        <p class="price-amount">$99</p>
+                    </div>
+                    <div class="price">
+                        <p class="price-label">Children</p>
+                        <p class="price-amount">$89</p>
+                        <p></p>
+                    </div>
+                    <div class="price">
+                        <p class="price-label">Pensioners</p>
+                        <p class="price-amount">$89</p>
+                    </div>
+                    <div class="price">
+                        <p class="price-label">Family<br><span>(2 adults and 2 children)</span></p>
+                        <p class="price-amount">$320</p>
+                    </div>
+                </div>
+                <div>
+                    <a href="#" class="button">Buy Tickets</a>
+                </div>
+            </div>
+
+    </section>*@

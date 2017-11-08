@@ -91,3 +91,127 @@
   #find-right-ticket .help-me-slick .slick-slide {
     margin: 10px; }
 
+#park-information-section {
+  background-color: #F4F4F4;
+  z-index: -10; }
+  #park-information-section .center-text {
+    text-align: center; }
+  #park-information-section .border-radius-3 {
+    border-radius: 3px; }
+  #park-information-section .border-radius-5 {
+    border-radius: 5px; }
+  #park-information-section .col-1 {
+    width: 90px; }
+  #park-information-section .col-2 {
+    width: 180px; }
+  #park-information-section .col-3 {
+    width: 270px; }
+  #park-information-section .col-4 {
+    width: 360px; }
+  #park-information-section .col-5 {
+    width: 450px; }
+  #park-information-section .col-6 {
+    width: 540px; }
+  #park-information-section .col-7 {
+    width: 630px; }
+  #park-information-section .col-8 {
+    width: 720px; }
+  #park-information-section .col-9 {
+    width: 810px; }
+  #park-information-section .col-10 {
+    width: 900px; }
+  #park-information-section .col-11 {
+    width: 990px; }
+  #park-information-section .col-12 {
+    width: 1080px; }
+  #park-information-section .height-40 {
+    height: 40px;
+    background-color: #4E20A1;
+    margin-bottom: 10px; }
+  #park-information-section .color-purple {
+    background-color: #4E20A1; }
+  #park-information-section .color-red {
+    background-color: #C11D33; }
+  #park-information-section .color-blue {
+    background-color: #0091D5; }
+  #park-information-section .color-yellow {
+    background-color: #ECCF4B; }
+  #park-information-section .color-beige {
+    background-color: #F4F4F4; }
+  #park-information-section .pad-20 {
+    padding: 20px; }
+  #park-information-section .pad-10 {
+    padding: 10px; }
+  #park-information-section .pad-5 {
+    padding: 5px; }
+  #park-information-section .pad-3 {
+    padding: 3px; }
+  #park-information-section #park-info-section {
+    position: relative;
+    top: -60px;
+    height: 320px; }
+    #park-information-section #park-info-section #park-prices-section {
+      z-index: 1;
+      height: 380px;
+      position: absolute;
+      right: 0;
+      color: #ffffff; }
+      #park-information-section #park-info-section #park-prices-section #prices-menu {
+        font-size: 14px;
+        font-weight: bold;
+        border-bottom: solid 1px #ffffff;
+        height: 60px;
+        line-height: 60px; }
+        #park-information-section #park-info-section #park-prices-section #prices-menu > ul {
+          list-style: none;
+          padding-left: 0px; }
+        #park-information-section #park-info-section #park-prices-section #prices-menu > ul > li {
+          display: inline-block;
+          padding-left: 5px;
+          padding-right: 5px; }
+        #park-information-section #park-info-section #park-prices-section #prices-menu > ul > li > a {
+          text-decoration: none;
+          color: #ffffff; }
+      #park-information-section #park-info-section #park-prices-section #price-content {
+        position: relative;
+        padding-top: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        height: 100%; }
+        #park-information-section #park-info-section #park-prices-section #price-content #pricing-details {
+          margin-bottom: 40px; }
+          #park-information-section #park-info-section #park-prices-section #price-content #pricing-details .price {
+            clear: both;
+            padding: 10px 0px; }
+          #park-information-section #park-info-section #park-prices-section #price-content #pricing-details .price-label {
+            float: left;
+            font-size: 18px; }
+          #park-information-section #park-info-section #park-prices-section #price-content #pricing-details .price-label span {
+            font-size: 12px; }
+          #park-information-section #park-info-section #park-prices-section #price-content #pricing-details .price-amount {
+            float: right;
+            font-size: 18px;
+            font-weight: bold; }
+        #park-information-section #park-info-section #park-prices-section #price-content div.button {
+          width: 100%;
+          background-color: #ffffff;
+          color: #C11D33;
+          text-align: center;
+          font-size: 20px;
+          font-weight: bold;
+          height: 60px;
+          line-height: 60px;
+          border-radius: 3px;
+          cursor: pointer; }
+    #park-information-section #park-info-section #park-hours-section {
+      color: #0091D5;
+      position: relative;
+      top: 60px;
+      height: 320px; }
+      #park-information-section #park-info-section #park-hours-section .park-info {
+        display: inline-block;
+        width: 33.33333%; }
+        #park-information-section #park-info-section #park-hours-section .park-info img {
+          float: left;
+          width: 30px; }
+

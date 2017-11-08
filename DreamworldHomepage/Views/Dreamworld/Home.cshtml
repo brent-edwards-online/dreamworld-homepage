@@ -8,13 +8,7 @@
 @{
     Html.RenderPartial("Partials/_Navigation", Model.Navigation);
     Html.RenderPartial("Partials/_Banner", Model.Banner);
-}
-
-@*@Html.Partial("Partials/_ParkPricing", Model.ParkPricing);*@
-@Html.Partial("Partials/_ParkInformation", Model.ParkInformation);
-        
-
-@{
+    Html.RenderPartial("Partials/_ParkInformation", Model.ParkInformation);       
     Html.RenderPartial("Partials/_WhatsGoingOn", Model.WhatsGoingOn);
     Html.RenderPartial("Partials/_YourFavouriteDreamworldExperiences", Model.YourFavouriteDreamworldExperiences);
     Html.RenderPartial("Partials/_ParkUpdates", Model.ParkUpdates);
