@@ -1,0 +1,89 @@
+﻿#nav-container {
+    $col-blue: #0091D5;
+    $col-purple: #4E20A1;
+    $col-red: #C11D33;
+    $col-yellow: #ECCF4B;
+    $col-menu: #2A3037;
+    $col-grey: #F4F4F4;
+    $col-black: #000000;
+    $col-white: #FFFFFF;
+
+    width: 100%;
+    height: 160px;
+    position: fixed;
+    z-index: 1;
+    transition: background-color .5s linear;
+
+    & > #main-navigation {
+        width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 10;
+        position: relative;
+
+        #button-container {
+            height: 160px;
+            width: 130px;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+
+            & > #button {
+                text-align: center;
+                background-color: $col-red;
+                line-height: 45px;
+                width: 130px;
+                border-radius: 5px;
+
+                & > a {
+                    font-size: 14px;
+                    color: $col-white;
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        #logo {
+            height: 160px;
+
+            & > img {
+                width: 160px;
+            }
+        }
+
+        #main-menu {
+            line-height: 160px;
+            position: absolute;
+            top: 0px;
+            left: 160px;
+
+            & > ul {
+                list-style: none;
+
+                & > li {
+                    cursor: pointer;
+                    display: inline-block;
+                    padding-left: 50px;
+
+                    & > a {
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: $col-white;
+                        text-decoration: none;
+                    }
+
+                    & > .dropdown-content {
+                        display: none;
+                        height: 200px;
+                        width: 1280px;
+                        background-color: white;
+                        position: relative;
+                    }
+                }
+            }
+        }
+    }
+}

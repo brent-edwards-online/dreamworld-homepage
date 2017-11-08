@@ -274,6 +274,7 @@
     <Content Include="Content\styles\main.min.css">
       <DependentUpon>main.css</DependentUpon>
     </Content>
+    <None Include="Content\styles\_navigation.scss" />
     <Content Include="Content\styles\_right-ticket.scss" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
