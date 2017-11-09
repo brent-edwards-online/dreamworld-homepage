@@ -1,0 +1,53 @@
+﻿#live-at-dreamworld {
+    $col-blue: #0091D5;
+    $col-purple: #4E20A1;
+    $col-red: #C11D33;
+    $col-yellow: #ECCF4B;
+    $col-menu: #2A3037;
+    $col-grey: #F4F4F4;
+    $col-black: #000000;
+    $col-white: #FFFFFF;
+
+    
+        padding-left: 100px;
+        padding-right: 100px;
+        overflow: hidden;
+        text-align: center;
+    
+
+    .instagram-icon {
+        height: 5px;
+    }
+
+    #instagram-container {
+        width: 100%;
+        float: left;
+    }
+
+    .instagram-images {
+        width: 75%;
+        height: 100%;
+        float: left;
+    }
+
+    .instagram-image {
+        width: 33.33%;
+        background-size: cover;
+        height: 100%;
+        float: left;
+    }
+
+    .instagram-message {
+        width: 25%;
+        border: solid 1px black;
+        float: left;
+        height: 100%;
+        background-color: #4E20A1;
+    }
+
+    h1 {
+        font-size: 25px;
+        color: #0091D5;
+        font-family: 'Amsi Pro Black';
+    }
+}
