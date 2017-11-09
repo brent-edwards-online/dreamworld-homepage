@@ -6,74 +6,91 @@
 
                 <div class="ticket-group-menu">
                     <ul>
-                        <li><a href="#">Tickets</a></li>
-                        <li><a class="selected" href="#">Passes</a></li>
-                        <li><a href="#">Packages</a></li>
+                        <li><a data-toggle="tab" href="#find-right-ticket__tickets">Tickets</a></li>
+                        <li class="active"><a data-toggle="tab" href="#find-right-ticket__passes">Passes</a></li>
+                        <li><a data-toggle="tab" href="#find-right-ticket__packages">Packages</a></li>
                     </ul>
                 </div>
 
-                <div class="slick-ticket-container">
-                    <div class="help-me-slick">
-                        @Ticket(
-                            "red",
-                            "Season pass",
-                            74,
-                            "Unlimited entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck",
-                            "Until 30 June 2018",
-                            "Buy 3 and get fourth pass free"
-                            )
-                        
-                        @Ticket(
-                            "purple",
-                            "Annual pass",
-                            109,
-                            "Unlimited entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck",
-                            "For 12 months from first visit"
-                            )
-                        
-                        @Ticket(
-                            "blue",
-                            "1 day ticket",
-                            75,
-                            "1 day entry to Dreamworld and WhiteWater World",
-                            "For 12 months from first visit"
-                            )
-                        
-                        @Ticket(
-                            "red",
-                            "3 day ticket",
-                            75,
-                            "3 days entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck",
-                            "For 12 months from first visit"
-                            )
-                        
-                        @Ticket(
-                            "purple",
-                            "7 day ticket",
-                            95,
-                            "7 days entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck",
-                            "For 12 months from first visit"
-                            )
+                <div class="tab-content">
+                    <div id="find-right-ticket__tickets" class="tab-pane">
+                        <div class="slick-ticket-container">
+                            <div class="help-me-slick">
+                                @Ticket(
+                                    "blue",
+                                    "1 day ticket",
+                                    75,
+                                    "1 day entry to Dreamworld and WhiteWater World",
+                                    "For 12 months from first visit"
+                                    )
+
+                                @Ticket(
+                                    "red",
+                                    "3 day ticket",
+                                    75,
+                                    "3 days entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck",
+                                    "For 12 months from first visit"
+                                    )
+
+                                @Ticket(
+                                    "purple",
+                                    "7 day ticket",
+                                    95,
+                                    "7 days entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck",
+                                    "For 12 months from first visit"
+                                    )
+                            </div>
+                        </div>
+                    </div>
+                    <div id="find-right-ticket__passes" class="tab-pane active">
+                        <div class="slick-ticket-container">
+                            <div class="help-me-slick">
+                                @Ticket(
+                                    "red",
+                                    "Season pass",
+                                    74,
+                                    "Unlimited entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck",
+                                    "Until 30 June 2018",
+                                    "Buy 3 and get fourth pass free"
+                                    )
+
+                                @Ticket(
+                                    "purple",
+                                    "Annual pass",
+                                    109,
+                                    "Unlimited entry to Dreamworld, WhiteWater World and SkyPoint Observation Deck",
+                                    "For 12 months from first visit"
+                                    )
+                            </div>
+                        </div>
+                    </div>
+                    <div id="find-right-ticket__packages" class="tab-pane">
+
                     </div>
                 </div>
+                
+                <a class="btn-all" href="#">
+                    See all tickets
+                </a>
             </div>
         </div>
     </div>
 </section>
 
 <script>
-    $(function() {
-        $(".help-me-slick").slick({
-            centerMode: false,
-            arrows: false,
-            infinite: false,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            dots: true,
-            centerMode: false,
-            centerPadding: 0,
-            initialSlide: 0
-        });
+    var slickOptions = {
+        arrows: false
+        , infinite: false
+        , slidesToShow: 3
+        , slidesToScroll: 1
+        , dots: true
+        , centerPadding: 0
+        , initialSlide: 0
+    };
+
+    $(function () {
+        $("#find-right-ticket__tickets .help-me-slick").slick(slickOptions);
+        $("#find-right-ticket__passes .help-me-slick").slick(slickOptions);
     });
 </script>
 
@@ -87,12 +104,22 @@
                     <h2>Exclusive offer:</h2>
                     <h3>Buy 3 and get forth pass free</h3>
                 </div>
-            }
+}
             <div class="ticket-content">
-                <div class="ticket-image clearfix">
-                    <img src="~/Content/images/HelpMeFindTheRightTicket/icon_ticket_annual pass.svg" width="120" />
+                <div class="ticket-info">
+                    <div class="ticket-info__type">
+                        <span>
+                            @ticketType
+                        </span>
+
+                    </div>
+                    <div class="ticket-info__price">
+                        From
+                        <strong>
+                            $@fromPrice<sup>00</sup>
+                        </strong>
+                    </div>
                     <p>
-                        <span>From</span><br />$@fromPrice<small>00</small>
                     </p>
                 </div>
                 <div class="ticket-data">
