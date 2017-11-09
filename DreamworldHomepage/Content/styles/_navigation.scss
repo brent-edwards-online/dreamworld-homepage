@@ -12,7 +12,7 @@
     height: 160px;
     position: fixed;
     z-index: 10;
-    transition: background-color .5s linear;
+    transition: all .5s linear;
 
     & > #main-navigation {
         width: 1280px;
@@ -50,6 +50,7 @@
 
             & > img {
                 width: 160px;
+                transition: all .5s linear;
             }
         }
 
@@ -58,6 +59,7 @@
             position: absolute;
             top: 0px;
             left: 160px;
+            transition: all .5s linear;
 
             & > ul {
                 list-style: none;
