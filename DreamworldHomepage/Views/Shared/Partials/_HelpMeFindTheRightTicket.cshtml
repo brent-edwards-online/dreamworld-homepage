@@ -84,21 +84,25 @@
                                     )
                                 @Package(
                                     "Package_2.jpg",
-                                    "Family Day Out Package",
+                                    "Family Day Out Package TEST TEST TEST TES TEST",
                                     438,
                                     "4 tickets",
                                     "(includes photo pass)",
                                     true
-                                )
+                                    )
                                 @Package(
                                     "Package_3.jpg",
                                     "Wildlife Adventure Package",
                                     343,
                                     "2 Adult day tickets",
                                     "+ Tiger Feed + Sunset Safari"
-                                )
+                                    )
                             </div>
                         </div>
+                            
+                        <a class="btn-all" href="#">
+                            See all packages
+                        </a>
                     </div>
                 </div>
             </div>
@@ -175,22 +179,24 @@
             <img alt="@title" src="/Content/images/HelpMeFindTheRightTicket/@imageUrl" />
 
             <div class="package__inner">
-                <div class="package__inner__title">
-                    <h2>
-                        @title
-                    </h2>
-                    <div class="price">
-                        @if (isFrom)
-                        {
-                            <span class="from">From</span>
-}
-                        $@price<sup>00</sup>
+                <div class="package__details">
+                    <div class="package__details__title">
+                        <h2>
+                            @title
+                        </h2>
+                        <div class="price">
+                            @if (isFrom)
+                            {
+                                <span class="from">From</span>
+                            }
+                            $@price<sup>00</sup>
+                        </div>
                     </div>
-                </div>
-                <div class="package__inner__content">
-                    @text1
-                    <br />
-                    @text2
+                    <div class="package__details__content">
+                        @text1
+                        <br/>
+                        @text2
+                    </div>
                 </div>
                 <div class="button">
                     <a href="#">Select</a>

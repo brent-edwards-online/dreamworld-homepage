@@ -146,9 +146,9 @@ $ticket-blue: #0091D5;
         border-radius: 5px;
         text-align: center;
         padding-top: 36px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 25px;
         height: 450px;
     }
 
@@ -290,35 +290,82 @@ $ticket-blue: #0091D5;
     }
 
     .package {
+        height: 450px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+
         img {
             width: 100%;
         }
 
         &__inner {
-            padding: 30px;
+            padding: 30px 30px 25px;
             color: #3A3A3A;
             background-color: white;
-            
+            height: 100%;
+
+            .button {
+                padding: 0;
+            }
+
+            a {
+                color: #ffffff;
+                font-weight: 700;
+                border-radius: 5px;
+                font-size: 20px;
+                font-weight: bold;
+                text-decoration: none;
+                color: #ffffff;
+                height: 56px;
+                line-height: 56px;
+                width: 100%;
+                display: block;
+                background-color: $ticket-blue;
+
+                &:hover {
+                    filter: brightness(0.9);
+                }
+            }
+        }
+
+        &__details {
+            height: 98px;
+
             &__title {
+                display: flex;
+                font-weight: 700;
+                font-family: 'Amsi Pro Black';
+                justify-content: space-between;
+
                 h2 {
+                    font-size: 14px;
+                    line-height: 18px;
+                    text-align: left;
+                    font-weight: 700;
                 }
 
                 .price {
+                    color: $ticket-blue;
+                    text-align: right;
+                    font-size: 16px;
+                    white-space: nowrap;
                 }
 
                 .from {
+                    font-size: 11px;
                 }
 
                 sup {
+                    top: -4px;
+                    font-size: 11px;
                 }
             }
 
             &__content {
-            }
-
-            .button {
-                a {
-                }
+                font-size: 14px;
+                line-height: 17px;
+                text-align: left;
             }
         }
     }
