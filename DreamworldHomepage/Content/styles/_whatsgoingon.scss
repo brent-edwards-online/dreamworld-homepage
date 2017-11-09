@@ -14,9 +14,6 @@
     position: relative;
 
     #whats-going-on-heading {
-        position: relative;
-        left: -20px;
-
         h1 {
             color: $col-blue;
             font-size: 30px;
@@ -27,10 +24,9 @@
     }
 
     #whats-going-on-slick-container {
-        /*background-color: purple;*/
-        width: 1082px;
+        width: 1080px;
         position: relative;
-        left: -20px; /* Negates bootstrap 15px gutter*/
+
         #whats-going-on-slick {
             /*.slick-slider {
                 margin: auto;
