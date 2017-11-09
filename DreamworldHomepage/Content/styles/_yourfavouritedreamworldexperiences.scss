@@ -69,48 +69,40 @@
     #collage-lg-0 {
         left: 0%;
         top: 33%;
-        background-image: Url(@Model.Large0.Image);
     }
 
     #collage-lg-1 {
         left: 40%;
         top: 0%;
-        background-image: Url(@Model.Large1.Image);
     }
 
     #collage-md-0 {
         left: 60%;
         top: 66%;
-        background-image: Url(@Model.Medium0.Image);
     }
 
     #collage-sm-0 {
         left: 0%;
         top: 0%;
-        background-image: Url(@Model.Small0.Image);
     }
 
     #collage-sm-1 {
         left: 20%;
         top: 0%;
-        background-image: Url(@Model.Small1.Image);
     }
 
     #collage-sm-2 {
         left: 80%;
         top: 0%;
-        background-image: Url(@Model.Small2.Image);
     }
 
     #collage-sm-3 {
         left: 80%;
         top: 33%;
-        background-image: Url(@Model.Small3.Image);
     }
 
     #collage-sm-4 {
         left: 40%;
         top: 66%;
-        background-image: Url(@Model.Small4.Image);
     }
 }
