@@ -239,6 +239,9 @@
     <Content Include="Content\global.css" />
     <Content Include="Content\images\Banner\Homepage_head-banner_desktop.jpg" />
     <Content Include="Content\images\Banner\Homepage_head-banner_mobile.jpg" />
+    <Content Include="Content\images\HelpMeFindTheRightTicket\Package_1.jpg" />
+    <Content Include="Content\images\HelpMeFindTheRightTicket\Package_2.jpg" />
+    <Content Include="Content\images\HelpMeFindTheRightTicket\Package_3.jpg" />
     <Content Include="Content\images\LiveAtDreamworld\icon_instagram.svg" />
     <Content Include="Content\images\LiveAtDreamworld\instagram-image-01.jpg" />
     <Content Include="Content\images\LiveAtDreamworld\instagram-image-02.jpg" />
@@ -348,7 +351,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\images\Footer\" />
-    <Folder Include="Content\images\HelpMeFindTheRightTicket\" />
     <Folder Include="Content\images\icons\" />
     <Folder Include="Content\images\ParkPricing\" />
     <Folder Include="Content\images\ParkUpdate\" />

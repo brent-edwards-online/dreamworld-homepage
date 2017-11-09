@@ -41,6 +41,10 @@
                                     )
                             </div>
                         </div>
+
+                        <a class="btn-all" href="#">
+                            See all tickets
+                        </a>
                     </div>
                     <div id="find-right-ticket__passes" class="tab-pane active">
                         <div class="slick-ticket-container">
@@ -63,15 +67,40 @@
                                     )
                             </div>
                         </div>
+
+                        <a class="btn-all" href="#">
+                            See all passes
+                        </a>
                     </div>
                     <div id="find-right-ticket__packages" class="tab-pane">
-
+                        <div class="slick-ticket-container">
+                            <div class="help-me-slick">
+                                @Package(
+                                    "Package_1.jpg",
+                                    "Thrill Seeker Package",
+                                    185,
+                                    "1 Adult day ticket",
+                                    "+ Gold Ride Express"
+                                    )
+                                @Package(
+                                    "Package_2.jpg",
+                                    "Family Day Out Package",
+                                    438,
+                                    "4 tickets",
+                                    "(includes photo pass)",
+                                    true
+                                )
+                                @Package(
+                                    "Package_3.jpg",
+                                    "Wildlife Adventure Package",
+                                    343,
+                                    "2 Adult day tickets",
+                                    "+ Tiger Feed + Sunset Safari"
+                                )
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <a class="btn-all" href="#">
-                    See all tickets
-                </a>
             </div>
         </div>
     </div>
@@ -91,6 +120,7 @@
     $(function () {
         $("#find-right-ticket__tickets .help-me-slick").slick(slickOptions);
         $("#find-right-ticket__passes .help-me-slick").slick(slickOptions);
+        $("#find-right-ticket__packages .help-me-slick").slick(slickOptions);
     });
 </script>
 
@@ -132,6 +162,38 @@
                     <div class="button">
                         <a href="#">Select</a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@helper Package(string imageUrl, string title, int price, string text1, string text2, bool isFrom = false)
+{
+    <div class="package-outer">
+        <div class="package">
+            <img alt="@title" src="/Content/images/HelpMeFindTheRightTicket/@imageUrl" />
+
+            <div class="package__inner">
+                <div class="package__inner__title">
+                    <h2>
+                        @title
+                    </h2>
+                    <div class="price">
+                        @if (isFrom)
+                        {
+                            <span class="from">From</span>
+}
+                        $@price<sup>00</sup>
+                    </div>
+                </div>
+                <div class="package__inner__content">
+                    @text1
+                    <br />
+                    @text2
+                </div>
+                <div class="button">
+                    <a href="#">Select</a>
                 </div>
             </div>
         </div>
