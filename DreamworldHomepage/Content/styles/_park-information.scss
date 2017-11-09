@@ -267,26 +267,55 @@
         #park-hours-section {
             color: $col-blue;
             position: relative;
-            top: 60px;
+            top: 80px;
             height: 320px;
+            width: 845px;
+            left: -100px;
 
-            h1 {
+
+            & > #current-hours {
                 padding-top: 80px;
-                font-family: 'Amsi Pro';
-                text
+                position: relative;
+                text-align: center;
 
-                span {
-                    font-weight: bold;
+                h1 {
+                    font-family: 'Amsi Pro';
+                    font-size: 25px;
+                    line-height: 25px;
+
+                    span {
+                        font-weight: bold;
+                    }
                 }
             }
 
-            .park-info {
-                display: inline-block;
-                width: $percent-33;
+            & > #park-info {
+                padding-top: 80px;
+                width: 845px;
+                z-index: 100;
+                display: flex;
 
-                img {
-                    float: left;
-                    width: $dist-xl;
+                & > .park-info-item {
+                    height: 40px;
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+
+                    & > div {
+                        height: 40px;
+                        display: table;
+
+                        & > img {
+                            height: 40px;
+                        }
+
+                        & > p {                            
+                            padding-left: 15px;
+                            font-size: 15px;
+                            display: table-cell;
+                            vertical-align: middle;
+                        }
+                    }
                 }
             }
         }
