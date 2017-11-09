@@ -1,0 +1,86 @@
+﻿#whats-going-on {
+    $col-blue: #0091D5;
+    $col-purple: #4E20A1;
+    $col-red: #C11D33;
+    $col-yellow: #ECCF4B;
+    $col-menu: #2A3037;
+    $col-grey: #F4F4F4;
+    $col-black: #000000;
+    $col-white: #FFFFFF;
+    $col-date: #BABABA;
+
+    background-color: $col-grey;
+    padding-bottom: 20px;
+    position: relative;
+
+    #whats-going-on-heading {
+        position: relative;
+        left: -20px;
+
+        h1 {
+            color: $col-blue;
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 30px;
+            padding-bottom: 35px;
+        }
+    }
+
+    #whats-going-on-slick-container {
+        /*background-color: purple;*/
+        width: 1082px;
+        position: relative;
+        left: -20px; /* Negates bootstrap 15px gutter*/
+        #whats-going-on-slick {
+            /*.slick-slider {
+                margin: auto;
+                margin-top: 30px;
+                margin-bottom: 50px
+            }*/
+            /*.slick-side {
+                border: solid 3px blue;
+                margin: auto;
+                margin-top: 30px;
+                margin-bottom: 50px
+            }*/
+            .slick-content {
+                height: 300px;
+                /*background-color: $col-white;*/
+                /*max-width: 264px;*/
+                & > .slick-card {
+                    background-color: $col-white;
+                    height: 300px;
+                    max-width: 240px;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    & > img {
+                        max-width: 240px;
+                    }
+
+                    & > h2 {
+                        color: $col-date;
+                        font-size: 12pt;
+                    }
+
+                    & > h3 {
+                        font-size: 16pt;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    #what-left, #what-right {
+        color: #ffffff;
+        background-color: #0091d5;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        text-align: center;
+        font-size: 30px;
+        line-height: 70px;
+    }
+}

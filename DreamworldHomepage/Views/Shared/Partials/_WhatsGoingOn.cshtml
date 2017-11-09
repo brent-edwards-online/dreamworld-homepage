@@ -1,94 +1,29 @@
 ﻿@model DreamworldHomepage.ViewModels.WhatsGoingOnViewModel
-
-<style>
-    #whats-going-on {
-        background-color: #F4F4F4;
-        padding-bottom: 20px;
-        position: relative;
-    }
-
-        #whats-going-on .slick-content {
-            background-color: #fff;
-            max-width: 240px;
-        }
-
-        #whats-going-on img {
-            max-width: 240px;
-        }
-
-        #whats-going-on h2 {
-            color: #BABABA;
-            font-size: 12pt;
-        }
-
-        #whats-going-on h3 {
-            color: #BABABA;
-            font-size: 16pt;
-            font-weight: bold;
-        }
-
-
-
-    .whats-going-on-slick-container {
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-
-        .whats-going-on-slick-container h1 {
-            font-family: 'Amsi Pro';
-            font-weight: bold;
-            font-size: 30px;
-            color: #0091d5;
-        }
-
-    .whats-going-on-slick {
-        /*border: 1px black solid;*/
-    }
-
-    .slick-slide {
-        margin: 0 0px;
-    }
-
-    #what-left, #what-right {
-        color: #ffffff;
-        background-color: #0091d5;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        text-align: center;
-        font-size: 30px;
-        line-height: 70px;
-    }
-</style>
-
 <section id="whats-going-on">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
+                <div id="what-left" class="carousel-button left"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+                <div id="what-right" class="carousel-button right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
 
-                <div class="whats-going-on-slick-container">
+                <div id="whats-going-on-heading">
                     <h1>What's going on?</h1>
                 </div>
+                
+                <div id="whats-going-on-slick-container">
+                    
 
-                <div style="width: 100%; position: relative">
-                    <div class="whats-going-on-slick-container">
-                        <div id="what-left" class="carousel-button left"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
-                        <div id="what-right" class="carousel-button right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
-
-                        <div class="whats-going-on-slick">
-
-                            @foreach (var item in Model.Items)
-                            {
-                                <div class="slick-content">
-                                    <img src="@item.Image" />
-                                    <div style="padding:20px">
-                                        <h2>@item.DateText</h2>
-                                        <h3 style="color:@item.Color">@item.Title</h3>
-                                    </div>
+                    <div id="whats-going-on-slick">
+                        @foreach (var item in Model.Items)
+                        {
+                            <div class="slick-content">
+                                <div class="slick-card">
+                                    <img src="@item.Image" />                                
+                                    <h2>@item.DateText</h2>
+                                    <h3 style="color:@item.Color">@item.Title</h3>                                
                                 </div>
-                            }
-                        </div>
+                            </div>
+                        }
                     </div>
                 </div>
             </div>
@@ -96,7 +31,32 @@
     </div>
 </section>
 
+<script>
+    $(function () {
 
+        var numcards = $('#whats-going-on-slick .slick-content').length;        
+
+        $('#whats-going-on-slick').slick({
+            arrows: false,
+            infinite: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            dots: false,
+            centerMode: true,
+            centerPadding: "0px",
+            initialSlide: 2,
+            variableWidth: false,
+        });
+
+        $("#what-right").click(function () {
+            $('#whats-going-on-slick').slick("slickNext");
+        });
+
+        $("#what-left").click(function () {
+            $('#whats-going-on-slick').slick("slickPrev");
+        });
+    });
+</script>
 
 
 

@@ -24,12 +24,12 @@ section {
 
 .left {
     position: absolute;
-    left: 0px;
+    left: -100px;
 }
 
 .right {
     position: absolute;
-    right: 0px;
+    right: -100px;
 }
 
 .carousel-button.left{

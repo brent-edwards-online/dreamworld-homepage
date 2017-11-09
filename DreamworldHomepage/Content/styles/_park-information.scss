@@ -157,10 +157,13 @@
     background-color: $col-beige;
     z-index: -10;
 
-    #park-info-section {
+    #park-section {
         position: relative;
         top: -80px;
         height: 320px;
+        
+        left: -15px; /* Negates bootstrap 15px gutter urghhh! */
+        width: 1080px; /* Negates bootstrap 15px gutter urghhh! */
 
         #park-prices-section {
             z-index: 1;
@@ -269,14 +272,16 @@
             position: relative;
             top: 80px;
             height: 320px;
-            width: 845px;
-            left: -100px;
+            width: 745px;
+
 
 
             & > #current-hours {
                 padding-top: 80px;
                 position: relative;
                 text-align: center;
+                left: -100px;
+                width: 845px;
 
                 h1 {
                     font-family: 'Amsi Pro';
@@ -289,31 +294,35 @@
                 }
             }
 
-            & > #park-info {
-                padding-top: 80px;
-                width: 845px;
-                z-index: 100;
-                display: flex;
+            & > #park-info-section {
+                color: $col-blue;
 
-                & > .park-info-item {
-                    height: 40px;
-                    flex: 1;
+
+                & > #park-info {
+                    padding-top: 80px;
+                    width: 745px;
+                    z-index: 100;
                     display: flex;
-                    justify-content: center;
 
-                    & > div {
+                    & > .park-info-item {
                         height: 40px;
-                        display: table;
+                        flex: 1;
+                        display: flex;
 
-                        & > img {
+                        & > div {
                             height: 40px;
-                        }
+                            display: table;
 
-                        & > p {                            
-                            padding-left: 15px;
-                            font-size: 15px;
-                            display: table-cell;
-                            vertical-align: middle;
+                            & > img {
+                                height: 40px;
+                            }
+
+                            & > p {
+                                padding-left: 15px;
+                                font-size: 15px;
+                                display: table-cell;
+                                vertical-align: middle;
+                            }
                         }
                     }
                 }

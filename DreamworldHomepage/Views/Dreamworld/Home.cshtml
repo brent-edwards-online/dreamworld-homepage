@@ -22,19 +22,6 @@
 @section scripts{
     <script>
         $(function () {
-
-            $('.whats-going-on-slick').slick({
-                arrows: false,
-                infinite: false,
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                dots: false,
-                centerMode: false,
-                centerPadding: 0,
-                initialSlide: 0
-            });
-
-
             $(".park-updates-slick").slick({
                 arrows: false,
                 infinite: false,
@@ -56,13 +43,7 @@
                 $("#instagram-container").height($("#instagram-container").width() * 0.25);
             })
 
-            $("#what-right").click(function () {
-                $('.whats-going-on-slick').slick("slickNext");
-            });
-
-            $("#what-left").click(function () {
-                $('.whats-going-on-slick').slick("slickPrev");
-            });
+            
 
             $("#update-right").click(function () {
                 $('.park-updates-slick').slick("slickNext");
