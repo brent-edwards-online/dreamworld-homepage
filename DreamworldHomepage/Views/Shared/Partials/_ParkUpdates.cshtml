@@ -4,11 +4,11 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <button type="button" id="update-left" class="carousel-nav">
+                <button type="button" class="left carousel-nav">
                     <span class="icon-icon_arrow-left"></span>
                 </button>
                 
-                <button type="button" id="update-right" class="carousel-nav">
+                <button type="button" class="right carousel-nav">
                     <span class="icon-icon_arrow-right"></span>
                 </button>
 
@@ -16,10 +16,10 @@
                     <div class="park-updates-slick">
                         @foreach (var item in Model.Items)
                         {
-                            <div style="width: 200px; padding:25px">
-                                <h1>
+                            <div>
+                                <span class="heading">
                                     @item.Title
-                                </h1>
+                                </span>
                                 <span class="date">
                                     @item.Datetext
                                 </span>
@@ -33,3 +33,17 @@
         </div>
     </div>
 </section>
+
+<script>
+    $(function () {
+        $(".park-updates-slick").slick({
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: false,
+            centerPadding: 0,
+            prevArrow: $("#park-updates .left"),
+            nextArrow: $("#park-updates .right")
+        });
+    });
+</script>
