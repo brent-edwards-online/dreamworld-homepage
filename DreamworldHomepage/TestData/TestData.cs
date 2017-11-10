@@ -159,25 +159,25 @@ namespace DreamworldHomepage.TestData
             var updates = new List<ParkUpdateItem>();
             updates.Add(new ParkUpdateItem()
             {
-                Title = "PARK UPDATE",
+                Title = "Park update",
                 Datetext = "24th October 2017",
                 Description = "The Claw will be closed this Thursday 27th October between 10am-11am for routine maintenance."
             });
             updates.Add(new ParkUpdateItem()
             {
-                Title = "PARK UPDATE",
+                Title = "Park update",
                 Datetext = "1st November 2017",
                 Description = "The Puss In Boots Sword Swing will be closed from 18 to 26 November for routine maintenance."
             });
             updates.Add(new ParkUpdateItem()
             {
-                Title = "PARK UPDATE",
+                Title = "Park update",
                 Datetext = "2nd November 2017",
                 Description = "Tiger Island closed 8th November and 12 November."
             });
             updates.Add(new ParkUpdateItem()
             {
-                Title = "PARK UPDATE",
+                Title = "Park update",
                 Datetext = "5nd November 2017",
                 Description = "Main street under repair Christmas Eve 2017."
             });

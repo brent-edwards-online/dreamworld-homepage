@@ -1,75 +1,35 @@
 ﻿@model DreamworldHomepage.ViewModels.ParkUpdatesViewModel
 
-<style>
-    #park-updates {
-        background-color: #EAEAEA;
-        position: relative;
-    }
+<section id="park-updates">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <button type="button" id="update-left" class="carousel-nav">
+                    <span class="icon-icon_arrow-left"></span>
+                </button>
+                
+                <button type="button" id="update-right" class="carousel-nav">
+                    <span class="icon-icon_arrow-right"></span>
+                </button>
 
-        #park-updates h1 {
-            font-family: 'Amsi Pro';
-            color: #4E20A1;
-            font-size: 12pt;
-        }
-
-        #park-updates h2 {
-            font-family: 'Amsi Pro';
-            color: #000;
-            font-size: 12pt;
-        }
-
-        #park-updates h3 {
-            font-family: 'Amsi Pro';
-            color: #000;
-            font-size: 16pt;
-        }
-
-    .park-updates-slick-container {
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-
-    .park-updates-slick .slick-slide {
-        background-color: #EAEAEA;
-        padding-left: 10px;
-        height: 250px;
-    }
-
-    #update-left, #update-right {
-        background-color: #4E20A1;
-        color: #ffffff;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        text-align: center;
-        font-size: 30px;
-        line-height: 70px;
-    }
-</style>
-
-@{
-    <section id="park-updates">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div id="update-left" class="carousel-button left"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
-                    <div id="update-right" class="carousel-button right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
-
-                    <div class="park-updates-slick-container">
-                        <div class="park-updates-slick">
-                            @foreach (var item in Model.Items)
-                            {
-                                <div style="width: 200px; padding:25px">
-                                    <h1>@item.Title</h1>
-                                    <h2>@item.Datetext</h2>
-                                    <h3>@item.Description</h3>
-                                </div>
-                            }
-                        </div>
+                <div class="park-updates-slick-container">
+                    <div class="park-updates-slick">
+                        @foreach (var item in Model.Items)
+                        {
+                            <div style="width: 200px; padding:25px">
+                                <h1>
+                                    @item.Title
+                                </h1>
+                                <span class="date">
+                                    @item.Datetext
+                                </span>
+                                <p>
+                                    @item.Description
+                                </p>
+                            </div>}
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-}
+    </div>
+</section>

@@ -1,0 +1,64 @@
+﻿#park-updates {
+    background-color: #EAEAEA;
+    position: relative;
+
+    h1 {
+        font-family: 'Amsi Pro';
+        color: $purple;
+        line-height: 12px;
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0 0 35px;
+    }
+
+    .date {
+        font-family: 'Amsi Pro';
+        color: #0A0A0A;
+        font-size: 12px;
+        line-height: 12px;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-family: 'Amsi Pro';
+        color: #0A0A0A;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .park-updates-slick-container {
+    }
+
+    .park-updates-slick .slick-slide {
+        padding: 35px 30px;
+        background-color: #EAEAEA;
+        height: 250px;
+    }
+
+    .carousel-nav {
+        width: 70px;
+        height: 70px;
+        font-size: 70px;
+        line-height: 70px;
+        color: $purple;
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
+        top: 90px;
+
+        &:hover {
+            filter: brightness(0.9);
+        }
+    }
+
+    #update-left {
+        left: -100px;
+    }
+
+    #update-right {
+        right: -100px;
+    }
+}

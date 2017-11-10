@@ -279,6 +279,8 @@
     <Content Include="Content\fonts\Dreamworldfont.woff" />
     <Content Include="Content\styles\_yourfavouritedreamworldexperiences.scss" />
     <Content Include="Content\styles\_liveatdreamworld.scss" />
+    <Content Include="Content\styles\_variables.scss" />
+    <Content Include="Content\styles\_park-updates.scss" />
     <None Include="Content\styles\_navigation.scss" />
     <Content Include="Content\styles\_right-ticket.scss" />
     <None Include="compilerconfig.json" />
