@@ -92,63 +92,63 @@ namespace DreamworldHomepage.TestData
 
             // ***** YOUR FAVOURITE DREAMWORLD EXPERIENCES
             result.YourFavouriteDreamworldExperiences = new YourFavouriteDreamworldExperiencesViewModel();
-            result.YourFavouriteDreamworldExperiences.Title = "Your Favourite Dreamworld Experiences";
+            result.YourFavouriteDreamworldExperiences.Title = @"Your <strong>Favourite</strong> Dreamworld Experiences";
             result.YourFavouriteDreamworldExperiences.Large0 = new FavouriteDreamWorldExperienceItem()
             {
                 Image = "/Content/images/YourFavouriteDreamworldExperiences/large-0.jpg",
-                Title = "This is the title",
+                Title = "TIGER ISLAND",
                 Size = "L"
             };
 
             result.YourFavouriteDreamworldExperiences.Large1 = new FavouriteDreamWorldExperienceItem()
             {
                 Image = "/Content/images/YourFavouriteDreamworldExperiences/large-1.jpg",
-                Title = "This is the title",
+                Title = "THE CLAW",
                 Size = "L"
             };
 
             result.YourFavouriteDreamworldExperiences.Medium0 = new FavouriteDreamWorldExperienceItem()
             {
                 Image = "/Content/images/YourFavouriteDreamworldExperiences/med-0.jpg",
-                Title = "This is the title",
+                Title = "LEGO CERTIFIED STORE",
                 Size = "M"
             };
 
             result.YourFavouriteDreamworldExperiences.Medium1 = new FavouriteDreamWorldExperienceItem()
             {
-                Image = "/Content/images/YourFavouriteDreamworldExperiences/med-0.jpg",
+                Image = "/Content/images/YourFavouriteDreamworldExperiences/med-1.jpg",
                 Title = "This is the title",
                 Size = "M"
             };
             result.YourFavouriteDreamworldExperiences.Small0 = new FavouriteDreamWorldExperienceItem()
             {
                 Image = "/Content/images/YourFavouriteDreamworldExperiences/small-0.jpg",
-                Title = "This is the title",
+                Title = "WHITE WATER WORLD",
                 Size = "S"
             };
             result.YourFavouriteDreamworldExperiences.Small1 = new FavouriteDreamWorldExperienceItem()
             {
                 Image = "/Content/images/YourFavouriteDreamworldExperiences/small-1.jpg",
-                Title = "This is the title",
+                Title = "WIGGLES WORLD",
                 Size = "S"
             };
             result.YourFavouriteDreamworldExperiences.Small2 = new FavouriteDreamWorldExperienceItem()
             {
                 Image = "/Content/images/YourFavouriteDreamworldExperiences/small-2.jpg",
-                Title = "This is the title",
+                Title = "FAMILY RIDES",
                 Size = "S"
             };
             result.YourFavouriteDreamworldExperiences.Small3 = new FavouriteDreamWorldExperienceItem()
             {
                 Image = "/Content/images/YourFavouriteDreamworldExperiences/small-3.jpg",
-                Title = "This is the title",
+                Title = "KIDS RIDES",
                 Size = "S"
             };
 
             result.YourFavouriteDreamworldExperiences.Small4 = new FavouriteDreamWorldExperienceItem()
             {
                 Image = "/Content/images/YourFavouriteDreamworldExperiences/small-4.jpg",
-                Title = "This is the title",
+                Title = "SHOWS",
                 Size = "S"
             };
 

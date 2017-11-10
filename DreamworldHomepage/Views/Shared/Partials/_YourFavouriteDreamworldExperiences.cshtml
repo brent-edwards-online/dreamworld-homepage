@@ -37,20 +37,55 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <h1>@Model.Title</h1>
+                <h1>@Html.Raw(Model.Title)</h1>
 
-                <div id="collage-container" style="">
-                    <div id="collage-lg-0" class="collage-lg collage-img"></div>
-                    <div id="collage-lg-1" class="collage-lg collage-img"></div>
+                <div id="collage-container">
+                    <div id="collage-lg-0" class="collage-lg collage-img">
+                        <div class="collage-img-text collage-gradient">
+                            <a href="">@Model.Large0.Title <i class="icon-icon_circle-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div id="collage-lg-1" class="collage-lg collage-img">
+                        <div class="collage-img-text collage-gradient">
+                            <a href="">@Model.Large0.Title <i class="icon-icon_circle-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div id="collage-md-0" class="collage-md collage-img">
+                        <div class="collage-img-text collage-gradient">
+                            <a href="">@Model.Medium0.Title <i class="icon-icon_circle-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div id="collage-md-1" class="collage-md collage-img">
+                        <div class="collage-img-text collage-gradient">
+                            <a href="">@Model.Medium1.Title <i class="icon-icon_circle-arrow-right"></i></a>
+                        </div>
+                    </div>
 
-                    <div id="collage-md-0" class="collage-md collage-img"></div>
-                    <div id="collage-md-1" class="collage-md collage-img"></div>
-
-                    <div id="collage-sm-0" class="collage-sm collage-img"></div>
-                    <div id="collage-sm-1" class="collage-sm collage-img"></div>
-                    <div id="collage-sm-2" class="collage-sm collage-img"></div>
-                    <div id="collage-sm-3" class="collage-sm collage-img"></div>
-                    <div id="collage-sm-4" class="collage-sm collage-img"></div>
+                    <div id="collage-sm-0" class="collage-sm collage-img">
+                        <div class="collage-img-text collage-gradient">
+                            <a href="">@Model.Small0.Title <i class="icon-icon_circle-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div id="collage-sm-1" class="collage-sm collage-img">
+                        <div class="collage-img-text collage-gradient">
+                            <a href="">@Model.Small1.Title <i class="icon-icon_circle-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div id="collage-sm-2" class="collage-sm collage-img">
+                        <div class="collage-img-text collage-gradient">
+                            <a href="">@Model.Small2.Title <i class="icon-icon_circle-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div id="collage-sm-3" class="collage-sm collage-img">
+                        <div class="collage-img-text collage-gradient">
+                            <a href="">@Model.Small3.Title <i class="icon-icon_circle-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div id="collage-sm-4" class="collage-sm collage-img">
+                        <div class="collage-img-text collage-gradient">
+                            <a href="">@Model.Small4.Title <i class="icon-icon_circle-arrow-right"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
