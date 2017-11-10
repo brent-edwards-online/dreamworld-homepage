@@ -346,7 +346,6 @@
     <Content Include="Views\Shared\Partials\_Navigation.cshtml" />
     <Content Include="Views\Shared\Partials\_Banner.cshtml" />
     <Content Include="Views\Shared\Partials\_ParkInformation.cshtml" />
-    <Content Include="Views\Shared\Partials\_ParkPricing.cshtml" />
     <Content Include="Views\Shared\Partials\_WhatsGoingOn.cshtml" />
     <Content Include="Views\Shared\Partials\_YourFavouriteDreamworldExperiences.cshtml" />
     <Content Include="Views\Shared\Partials\_ParkUpdates.cshtml" />
