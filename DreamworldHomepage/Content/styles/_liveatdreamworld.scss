@@ -39,14 +39,15 @@
                 padding-top: 15px;
             }
 
-        font-family: $amsi-black;
+            font-family: $amsi-black;
+
             .instagram-image:last-child {
                 padding: 0;
                 padding-top: 60px;
                 text-align: center;
                 background-color: $purple;
-
                 p {
+                    cursor: pointer;
                     font-size: 20px;
                     line-height: 22px;
 
