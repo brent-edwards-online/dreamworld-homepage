@@ -37,20 +37,17 @@
 
 <script>
     $(function () {
-
-        var numcards = $('#whats-going-on-slick .slick-content').length;        
-
         $('#whats-going-on-slick').slick({
-            infinite: false,
+            infinite: true,
             slidesToShow: 4,
             slidesToScroll: 1,
             dots: true,
             centerMode: true,
             centerPadding: "0px",
-            initialSlide: 2,
+            initialSlide: 0,
             variableWidth: false,
-            prevArrow: $("#what-left"),
-            nextArrow: $("#what-right")
+            prevArrow: $("#what-right"),
+            nextArrow: $("#what-left")
         });        
     });
 </script>
