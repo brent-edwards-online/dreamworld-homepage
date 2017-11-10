@@ -1,20 +1,16 @@
-﻿$ticket-red: #C01D33;
-$ticket-purple: #4E2098;
-$ticket-blue: #0091D5;
-
-#find-right-ticket {
+﻿#find-right-ticket {
     text-align: center;
     margin-bottom: 50px;
     padding-top: 80px;
     padding-bottom: 40px;
-    background-color: #F4F4F4;
+    background-color: $grey;
 
     h1 {
         font-family: 'Amsi Pro Black';
         font-size: 40px;
         line-height: 40px;
         margin-bottom: 48px;
-        color: #2A3037;
+        color: $black;
         text-transform: none;
         color: #0a0a0a;
     }
@@ -70,7 +66,7 @@ $ticket-blue: #0091D5;
 
     .slick-slide {
         width: 330px;
-        height: 638px;
+        height: 540px;
     }
 
     .ticket-outer, .package-outer {
@@ -110,15 +106,15 @@ $ticket-blue: #0091D5;
         }
 
         &.red {
-            @include ticket-color($ticket-red);
+            @include ticket-color($red);
         }
 
         &.purple {
-            @include ticket-color($ticket-purple);
+            @include ticket-color($purple);
         }
 
         &.blue {
-            @include ticket-color($ticket-blue);
+            @include ticket-color($blue);
         }
     }
 
@@ -276,7 +272,7 @@ $ticket-blue: #0091D5;
         line-height: 60px;
         width: 270px;
         text-align: center;
-        background-color: $ticket-blue;
+        background-color: $blue;
         font-size: 20px;
         color: white;
         display: inline-block;
@@ -321,7 +317,7 @@ $ticket-blue: #0091D5;
                 line-height: 56px;
                 width: 100%;
                 display: block;
-                background-color: $ticket-blue;
+                background-color: $blue;
 
                 &:hover {
                     filter: brightness(0.9);
@@ -346,7 +342,7 @@ $ticket-blue: #0091D5;
                 }
 
                 .price {
-                    color: $ticket-blue;
+                    color: $blue;
                     text-align: right;
                     font-size: 16px;
                     white-space: nowrap;

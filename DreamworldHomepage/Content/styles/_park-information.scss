@@ -1,13 +1,9 @@
 ﻿#park-information-section {
 
-    $col-blue: #0091D5;
     $col-purple: #4E20A1;
     $col-red: #C11D33;
-    $col-yellow: #ECCF4B;
 
     $col-black: #000000;
-    $col-darkgrey: #2A3037;
-    $col-beige: #F4F4F4;
     $col-white: #ffffff;
     $col-white-inactive: rgba(255,255,255,0.6);
 
@@ -127,15 +123,15 @@
     }
 
     .color-blue {
-        background-color: $col-blue;
+        background-color: $blue;
     }
 
     .color-yellow {
-        background-color: $col-yellow;
+        background-color: $yellow;
     }
 
     .color-beige {
-        background-color: $col-beige;
+        background-color: $grey;
     }
 
     .pad-20 {
@@ -154,7 +150,7 @@
         padding: $pad-3;
     }
 
-    background-color: $col-beige;
+    background-color: $grey;
     z-index: -10;
 
     #park-section {
@@ -265,7 +261,7 @@
         }
 
         #park-hours-section {
-            color: $col-blue;
+            color: $blue;
             position: relative;
             top: 80px;
             height: 320px;
@@ -292,7 +288,7 @@
             }
 
             & > #park-info-section {
-                color: $col-blue;
+                color: $blue;
 
 
                 & > #park-info {
