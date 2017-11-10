@@ -1,0 +1,57 @@
+﻿#ad-mod-footer {
+    background-color: #EAEAEA;
+
+    .ad-social-connect {
+        border-bottom: 1px solid #D3D3D3;
+        text-align: center;
+        padding: 45px 40px 40px;
+
+        .ad-social-icons {
+            display: block;
+            padding: 0;
+            margin: 0 0 35px;
+
+            li {
+                list-style-type: none;
+                display: inline-block;
+
+                a {
+                    font-size: 20px;
+                    line-height: 45px;
+                    color: #3a3a3a;
+                    display: inline-block;
+                    width: 45px;
+                    height: 45px;
+                    border: 1px solid #3a3a3a;
+                    border-radius: 50%;
+                    margin: 0 20px;
+
+                    &:hover, &:focus {
+                        border-color: $red;
+                        color: $red;
+                    }
+                }
+            }
+        }
+
+        .ad-quick-links {
+            display: block;
+            padding: 0;
+            margin: 0;
+
+            li {
+                list-style-type: none;
+                display: inline-block;
+
+                a {
+                    font-family: $amsi-bold;
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: #3a3a3a;
+                    margin: 0 12px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
