@@ -281,6 +281,10 @@
     <Content Include="Content\styles\_liveatdreamworld.scss" />
     <Content Include="Content\styles\_variables.scss" />
     <Content Include="Content\styles\_park-updates.scss" />
+    <Content Include="Content\fonts\amsipro-black-webfont.woff" />
+    <Content Include="Content\fonts\amsipro-black-webfont.woff2" />
+    <Content Include="Content\fonts\amsipro-regular-webfont.woff" />
+    <Content Include="Content\fonts\amsipro-regular-webfont.woff2" />
     <None Include="Content\styles\_navigation.scss" />
     <Content Include="Content\styles\_right-ticket.scss" />
     <None Include="compilerconfig.json" />

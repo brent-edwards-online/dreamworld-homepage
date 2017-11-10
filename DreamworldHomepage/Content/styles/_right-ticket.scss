@@ -6,7 +6,7 @@
     background-color: $grey;
 
     h1 {
-        font-family: 'Amsi Pro Black';
+        font-family: $amsi-black;
         font-size: 40px;
         line-height: 40px;
         margin-bottom: 48px;
@@ -151,7 +151,7 @@
     .ticket-description {
         color: #3A3A3A;
         font-weight: 700;
-        font-family: 'Amsi Pro Black';
+        font-family: $amsi-black;
         font-size: 15px;
         line-height: 21px;
         height: 105px;
@@ -200,7 +200,7 @@
                 text-align: center;
                 display: block;
                 margin: 0 25px;
-                font-family: "Amsi Pro Black";
+                font-family: $amsi-black;
                 position: relative;
 
                 &:after {
@@ -212,7 +212,7 @@
                     position: absolute;
                     left: -17px;
                     top: -20px;
-                    font-family: 'Dreamworldfont';
+                    font-family: $dreamworld-icons;
                     z-index: -1;
                     color: yellow;
                 }
@@ -230,7 +230,7 @@
             font-family: "Amsi Pro";
 
             strong {
-                font-family: "Amsi Pro Black";
+                font-family: $amsi-black;
                 display: block;
                 font-size: 19px;
                 font-weight: 700;
@@ -331,7 +331,7 @@
             &__title {
                 display: flex;
                 font-weight: 700;
-                font-family: 'Amsi Pro Black';
+                font-family: $amsi-black;
                 justify-content: space-between;
 
                 h2 {

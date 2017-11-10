@@ -3,7 +3,7 @@
     position: relative;
 
     .heading {
-        font-family: 'Amsi Pro';
+        font-family: $amsi;
         color: $purple;
         line-height: 12px;
         font-size: 12px;
@@ -14,7 +14,7 @@
     }
 
     .date {
-        font-family: 'Amsi Pro';
+        font-family: $amsi;
         color: #0A0A0A;
         font-size: 12px;
         line-height: 12px;
@@ -23,7 +23,7 @@
     }
 
     p {
-        font-family: 'Amsi Pro';
+        font-family: $amsi;
         color: #0A0A0A;
         font-size: 16px;
         line-height: 24px;
