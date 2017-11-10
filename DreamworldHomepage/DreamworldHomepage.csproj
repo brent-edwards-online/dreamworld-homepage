@@ -317,6 +317,7 @@
     <Content Include="Content\styles\_park-information.scss" />
     <Content Include="Content\styles\_fonts.scss" />
     <Content Include="Content\styles\_whatsgoingon.scss" />
+    <Content Include="Content\styles\_signupforspecialoffers.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

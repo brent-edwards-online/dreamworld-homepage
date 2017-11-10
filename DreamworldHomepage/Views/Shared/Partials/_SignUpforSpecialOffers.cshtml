@@ -1,44 +1,12 @@
-﻿<style>
-    #sign-up {
-        padding-top: 20px;
-        text-align: center;
-    }
-
-    .sign-up-heading h1 {
-        font-family: 'Amsi Pro Black';
-        font-size: 25px;
-        color: #2A3037;
-    }
-
-    .sign-up-form {
-        text-align: center;
-    }
-
-    .dw-input {
-        display: block;
-        font-family: 'Amsi Pro';
-        border: none;
-        border-bottom: 2px solid #000000;
-    }
-
-        .dw-input:focus {
-            outline-width: 0;
-        }
-
-        .dw-input::-webkit-input-placeholder {
-            color: #0091D5;
-        }
-</style>
-
-<section id="sign-up" class="">
+﻿<section id="sign-up" class="">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <div class="sign-up-content">
-                    <div class="sign-up-heading">
-                        <h1>SIGN UP FOR SPECIAL OFFERS AND THEME PARK UPDATES</h1>
+                <div id="sign-up-content">
+                    <div id="sign-up-heading">
+                        <h1>SIGN UP FOR SPECIAL OFFERS AND THEME PARK UPDATES <i id="sign-up-button" class="icon-icon_circle-arrow-down"></i></h1>
                     </div>
-                    <div class="sign-up-form">
+                    <div id="sign-up-form">
                         <p>We need this information to help us keep in contact and find the best offers for you</p>
 
                         <input class="dw-input" type="text" placeholder="Full Name" />
@@ -51,3 +19,11 @@
         </div>
     </div>
 </section>
+
+<script>
+    $(window).on(function () {
+        $('#sign-up-button').on('click', function () {
+            $('#sign-up-button').css('display', 'block');
+        })
+    });
+</script>

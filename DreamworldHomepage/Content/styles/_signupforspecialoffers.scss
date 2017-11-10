@@ -1,0 +1,26 @@
+﻿#sign-up-content {
+    padding-top: 50px;
+    text-align: center;
+    height: 150px;
+
+    #sign-up-heading {
+        h1 {
+            font-family: 'Amsi Pro Black';
+            font-size: 25px;
+            line-height: 25px;
+            color: $black;
+
+            i {
+                position: relative;
+                top: 9px;
+                font-size: 40px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+    }
+
+    #sign-up-form {
+        display: none;
+    }
+}
