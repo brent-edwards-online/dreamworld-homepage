@@ -64,10 +64,15 @@
 
         &.slick-disabled {
             opacity: 0.3;
+            cursor: default;
         }
 
         &:hover {
             filter: brightness(0.9);
+        }
+
+        &:focus {
+            outline: none;
         }
     }
 
