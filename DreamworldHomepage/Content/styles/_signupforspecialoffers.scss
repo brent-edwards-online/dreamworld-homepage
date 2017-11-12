@@ -57,6 +57,7 @@
     &__label {
         position: absolute;
         font-size: 16px;
+        font-weight: 400;
         color: $blue;
         z-index: 0;
         text-align: right;
@@ -135,8 +136,9 @@
         padding-top: 50px;
         display: none;
 
-        p {
+        p {            
             text-align: center;
+            font-size: 18px;
         }
 
         button {
@@ -170,6 +172,7 @@
 
 
                 & label {
+                    font-weight: 400;
                     font-size: 16px;
                     display: block;
                     color: $blue;
