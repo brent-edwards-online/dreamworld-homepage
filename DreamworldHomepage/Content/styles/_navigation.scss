@@ -57,27 +57,43 @@
             left: 160px;
             transition: all .5s linear;
 
-            & > ul {
+            ul {
                 list-style: none;
 
-                & > li {
+                li {
                     cursor: pointer;
                     display: inline-block;
-                    padding-left: 50px;
+                    padding-left: 25px;
+                    padding-right: 25px;
+
+                    .menu-sub {
+                        background-color: #ffffff;
+                        position: absolute;
+                        left: 0;
+                        display: none;
+                        width: 100%;
+                    }
+
+
+                    &:hover {
+                        background-color: aqua;
+
+                        .menu-sub {
+                            display: flex;
+
+                            .sub-menu-items {
+                                ul {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
 
                     & > a {
                         font-size: 14px;
                         font-weight: bold;
                         color: $col-white;
                         text-decoration: none;
-                    }
-
-                    & > .dropdown-content {
-                        display: none;
-                        height: 200px;
-                        width: 1280px;
-                        background-color: white;
-                        position: relative;
                     }
                 }
             }
