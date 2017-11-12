@@ -185,6 +185,8 @@
                     font-size: 16px;
                     line-height: 16px;
                     color: #000000;
+                    position: relative;
+                    top: -5px;
                 }
 
                 label input[type="radio"] ~ i.fa.fa-circle-o {
@@ -207,11 +209,11 @@
                 }
 
                 label:hover input[type="radio"] ~ i.fa {
-                    color: #7AA3CC;
+                    color: #000000;
                 }
 
                 label input[type="checkbox"] ~ i.fa.fa-square-o {
-                    color: #c8c8c8;
+                    color: #000000;
                     display: inline;
                 }
 
@@ -224,16 +226,16 @@
                 }
 
                 label input[type="checkbox"]:checked ~ i.fa.fa-check-square-o {
-                    color: #7AA3CC;
+                    color: #000000;
                     display: inline;
                 }
 
                 label:hover input[type="checkbox"] ~ i.fa {
-                    color: #7AA3CC;
+                    color: #000000;
                 }
 
                 div[data-toggle="buttons"] label.active {
-                    color: #7AA3CC;
+                    color: #000000;
                 }
 
                 div[data-toggle="buttons"] label {
