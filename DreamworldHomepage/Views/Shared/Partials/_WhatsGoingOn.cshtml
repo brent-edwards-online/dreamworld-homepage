@@ -3,24 +3,28 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <div id="what-left" class="carousel-button left"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
-                <div id="what-right" class="carousel-button right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+
+                <button id="what-left" type="button" class="left carousel-nav">
+                    <span class="icon-icon_arrow-left"></span>
+                </button>
+
+                <button id="what-right" type="button" class="right carousel-nav">
+                    <span class="icon-icon_arrow-right"></span>
+                </button>
 
                 <div id="whats-going-on-heading">
                     <h1>What's going on?</h1>
                 </div>
                 
                 <div id="whats-going-on-slick-container">
-                    
-
                     <div id="whats-going-on-slick">
                         @foreach (var item in Model.Items)
                         {
                             <div class="slick-content">
                                 <div class="slick-card">
                                     <img src="@item.Image" />                                
-                                    <h2>@item.DateText</h2>
-                                    <h3 style="color:@item.Color">@item.Title</h3>                                
+                                    <span>@item.DateText</span>
+                                    <h2 style="color:@item.Color">@item.Title</h2>                                
                                 </div>
                             </div>
                         }
@@ -33,28 +37,18 @@
 
 <script>
     $(function () {
-
-        var numcards = $('#whats-going-on-slick .slick-content').length;        
-
         $('#whats-going-on-slick').slick({
-            arrows: false,
-            infinite: false,
+            infinite: true,
             slidesToShow: 4,
             slidesToScroll: 1,
-            dots: false,
+            dots: true,
             centerMode: true,
             centerPadding: "0px",
-            initialSlide: 2,
+            initialSlide: 0,
             variableWidth: false,
-        });
-
-        $("#what-right").click(function () {
-            $('#whats-going-on-slick').slick("slickNext");
-        });
-
-        $("#what-left").click(function () {
-            $('#whats-going-on-slick').slick("slickPrev");
-        });
+            prevArrow: $("#what-right"),
+            nextArrow: $("#what-left")
+        });        
     });
 </script>
 

@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      .parent-container {
+        width: 500;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .parent-container:nth-child(1){
+        background-color: hotpink;
+      }
+
+      .parent-container:nth-child(2){
+        background-color: goldenrod;
+      }
+
+      .child-container {
+        z-index: 5;
+        width: 200px;
+        height: 100px;
+        margin: auto;
+        padding: 0 50px;
+      }
+      
+      .child-container.blue{
+        background-color: blueviolet;
+      }
+
+      .child-container.green{
+        background-color: rgb(65, 243, 30);
+        box-sizing: border-box;
+      }
+
+    </style>
+  </head>
+  <body>
+
+
+    <div class="parent-container">
+      <div class="child-container blue">This is default </div>
+        
+    </div>
+    <div class="parent-container">
+      <div class="child-container green">This is BORDER-BOX</div>
+    </div>
+  </body>
+</html>

@@ -1,53 +1,129 @@
-﻿<style>
-    #sign-up {
-        padding-top: 20px;
-        text-align: center;
-    }
-
-    .sign-up-heading h1 {
-        font-family: 'Amsi Pro Black';
-        font-size: 25px;
-        color: #2A3037;
-    }
-
-    .sign-up-form {
-        text-align: center;
-    }
-
-    .dw-input {
-        display: block;
-        font-family: 'Amsi Pro';
-        border: none;
-        border-bottom: 2px solid #000000;
-    }
-
-        .dw-input:focus {
-            outline-width: 0;
-        }
-
-        .dw-input::-webkit-input-placeholder {
-            color: #0091D5;
-        }
-</style>
-
-<section id="sign-up" class="">
+﻿<section id="sign-up" class="">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <div class="sign-up-content">
-                    <div class="sign-up-heading">
-                        <h1>SIGN UP FOR SPECIAL OFFERS AND THEME PARK UPDATES</h1>
+                <div id="sign-up-content">
+                    <div id="sign-up-heading">
+                        <h1>SIGN UP FOR SPECIAL OFFERS AND THEME PARK UPDATES <i id="sign-up-button" class="icon-icon_circle-arrow-down"></i></h1>
                     </div>
-                    <div class="sign-up-form">
+                    <div id="sign-up-form">
                         <p>We need this information to help us keep in contact and find the best offers for you</p>
 
-                        <input class="dw-input" type="text" placeholder="Full Name" />
-                        <input class="dw-input" type="text" placeholder="Date of birth(e.g. 10/09/1998)" />
-                        <input class="dw-input" type="email" placeholder="Suburb/Postcode" />
-                        <input class="dw-input" type="text" placeholder="Country" />
+                        <div id="contact-panels">
+                            <div id="contact-panel">
+                                <div class="rich-input">
+                                    <label class="rich-input__label" for="fullname">Full Name</label>
+                                    <input class="rich-input__inp" type="text" id="fullname" name="FullName" />
+                                </div>
+                                <div class="rich-input">
+                                    <label class="rich-input__label" for="dateofbirth">Date of birth(e.g. 10/09/1998)</label>
+                                    <input class="rich-input__inp" type="text" id="dateofbirth" name="DateOfBirth" />
+                                </div>
+                                <div class="rich-input">
+                                    <label class="rich-input__label" for="email">Email</label>
+                                    <input class="rich-input__inp" type="email" id="email" name="UserEmail" />
+                                </div>
+                                <div class="rich-input">
+                                    <label class="rich-input__label" for="suburb">Suburb/Postcode</label>
+                                    <input class="rich-input__inp" type="text" id="suburb" name="Suburb" />
+                                </div>
+                                <div class="rich-input">
+                                    <label class="rich-input__label" for="country">Country</label>
+                                    <input class="rich-input__inp" type="text" id="country" name="Country" />
+                                </div>
+                            </div>
+                            <div id="information-panel">
+                                <label class="" for="passholder">Are you a current pass holder?</label>
+                                <div class="btn-group" data-toggle="buttons">
+                                    <label class="btn active">
+                                        <input type="radio" name='passholder' checked><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> Yes</span>
+                                    </label>
+                                    <label class="btn">
+                                        <input type="radio" name='passholder'><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span> No</span>
+                                    </label>
+                                </div>
+                                <label class="" for="passholder">What are you interested in at Dreamworld?</label>
+                                <div id="interests">
+                                    <div class="btn-group btn-group-vertical ib" data-toggle="buttons">
+                                        <label class="btn active">
+                                            <input type="checkbox" name='big9' checked><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i> <span> Big 9 Thrill Rides</span>
+                                        </label>
+                                        <label class="btn">
+                                            <input type="checkbox" name='animals'><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i><span> The Animals</span>
+                                        </label>
+                                        <label class="btn">
+                                            <input type="checkbox" name='www'><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i><span> White Water World</span>
+                                        </label>
+                                        <label class="btn">
+                                            <input type="checkbox" name='wiggles'><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i><span> Wiggles</span>
+                                        </label>
+                                        <label class="btn">
+                                            <input type="checkbox" name='dreamworks'><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i><span> Dreamworks</span>
+                                        </label>
+                                        <label class="btn">
+                                            <input type="checkbox" name='events'><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i><span> Events</span>
+                                        </label>
+                                    </div>
+                                    <div class="btn-group btn-group-vertical ib" data-toggle="buttons">
+                                        <label class="btn active">
+                                            <input type="checkbox" name='corroboree' checked><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i> <span> Dreamworld Corroboree</span>
+                                        </label>
+                                        <label class="btn">
+                                            <input type="checkbox" name='tigers'><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i><span> Tigers</span>
+                                        </label>
+                                        <label class="btn">
+                                            <input type="checkbox" name='kidsworld'><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i><span> ABC Kids World</span>
+                                        </label>
+                                        <label class="btn">
+                                            <input type="checkbox" name='motorsport'><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i><span> Motorsport</span>
+                                        </label>
+                                        <label class="btn">
+                                            <input type="checkbox" name='food'><i class="fa fa-square-o fa-2x"></i><i class="fa fa-check-square-o fa-2x"></i><span> Food &amp; Shopping</span>
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button">
+                            Join Now
+                        </button>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<script>
+    $(function () {
+        $('#sign-up-button').on('click', function (event) {
+            var $this = $(this);
+
+            var isVisible = $('#sign-up-form').css('display') != 'none';
+            if (isVisible) {
+                $this.removeClass('icon-icon_circle-arrow-up')
+                    .addClass('icon-icon_circle-arrow-down');
+                $('#sign-up-form').css('display', 'none');
+            }
+            else {
+                $this.removeClass('icon-icon_circle-arrow-down')
+                    .addClass('icon-icon_circle-arrow-up');
+                $('#sign-up-form').css('display', 'block');
+
+            }
+        });
+
+        $('.rich-input__inp')
+            .off('focus blur')
+            .on('focus blur', function (e) {
+                var $this = $(this);
+                var $ri = $this.parents('.rich-input');
+                $ri.toggleClass('active', (e.type === 'focus' || this.value.length > 0));
+                // $this.val() === "" ? $ri.removeClass('error') : null;
+            })
+            .trigger('blur');
+    });
+</script>

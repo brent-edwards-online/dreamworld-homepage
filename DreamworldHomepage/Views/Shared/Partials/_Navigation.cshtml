@@ -7,16 +7,46 @@
         </div>
         <div id="main-menu">
             <ul>
-                <li>
-                    <a href="">PARK INFO</a>
-                    <div class="dropdown-content">
-                        Park Info
+                <li><a href="">PARK INFO</a>
+                    <div class="menu-sub">
+                        <div>
+                            <ul>
+                                <li>Park Info 1</li>
+                                <li>Park Info 2</li>
+                                <li>Park Info 3</li>
+                                <li>Park Info 4</li>
+                                <li>Park Info 5</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Park Info 1</li>
+                                <li>Park Info 2</li>
+                                <li>Park Info 3</li>
+                            </ul>
+                        </div>
+
                     </div>
                 </li>
-                <li>
-                    <a href="">RIDES</a>
-                    <div class="dropdown-content">
-                        Rides
+                <li><a href="">RIDES</a>
+                    <div class="menu-sub">
+                        <div class="sub-menu-items">
+                            <ul>
+                                <li>Rides 1</li>
+                                <li>Rides 2</li>
+                                <li>Rides 3</li>
+                                <li>Rides 4</li>
+                                <li>Rides 5</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Rides 1</li>
+                                <li>Rides 2</li>
+                                <li>Rides 3</li>
+                            </ul>
+                        </div>
+
                     </div>
                 </li>
                 <li><a href="">ATTRACTIONS</a></li>
@@ -40,10 +70,22 @@
 
 <script>
     $(function () {
+
+        var defaultColor = 'transparent';
+        
+        $('#main-menu').hover(function () {
+            $('#nav-container').css('background-color', '#2A3037');
+        }, function () {
+            // on mouseout, reset the background colour
+            $('#nav-container').css('background-color', defaultColor);
+        });
+
         $(window).scroll(function (event) {
             if ($(window).scrollTop() > 0) {
+                defaultColor = '#2A3037';
+
                 $('#nav-container').css({
-                    'background-color': '#2A3037',
+                    'background-color': defaultColor,
                     'height' : '80px'
                     });
 
@@ -61,8 +103,10 @@
                 });
             }
             else {
+                defaultColor = 'transparent';
+
                 $('#nav-container').css({
-                    'background-color': 'transparent',
+                    'background-color': defaultColor,
                     'height': '160px'
                 });
 

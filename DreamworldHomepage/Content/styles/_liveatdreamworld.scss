@@ -16,11 +16,10 @@
         margin-right: auto;
 
         #instagram-container {
-            /*width: 1280px;*/
             width: 100%;
             float: left;
             color: #ffffff;
-
+            
             .instagram-images {
                 text-align: left;
                 width: 100%;
@@ -39,7 +38,8 @@
                 padding-top: 15px;
             }
 
-        font-family: $amsi-black;
+            font-family: $amsi-black;
+
             .instagram-image:last-child {
                 padding: 0;
                 padding-top: 60px;
@@ -47,6 +47,7 @@
                 background-color: $purple;
 
                 p {
+                    cursor: pointer;
                     font-size: 20px;
                     line-height: 22px;
 
