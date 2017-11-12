@@ -54,4 +54,66 @@
             }
         }
     }
+
+    .ad-main-link {
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
+        line-height: 20px;
+        justify-content: space-between;
+        margin-bottom: 80px;
+
+        h2 {
+            a {
+                font-size: 12px;
+                line-height: 20px;
+                font-family: $amsi-bold;
+            }
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+
+            li {
+                list-style-type: none;
+
+                a {
+                    color: #3a3a3a;
+                }
+            }
+        }
+    }
+
+    .ad-general-links {
+        color: #777777;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        padding-bottom: 60px;
+
+        p {
+            margin: 0 auto;
+            padding: 0;
+            max-width: 550px;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+
+            li {
+                list-style-type: none;
+                display: inline-block;
+                margin-left: 7px;
+                margin-right: 7px;
+                text-transform: uppercase;
+
+                a {
+                    color: #777777;
+                    font-family: $amsi-bold;
+                }
+            }
+        }
+    }
 }
