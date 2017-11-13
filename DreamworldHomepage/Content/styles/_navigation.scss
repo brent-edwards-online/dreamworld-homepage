@@ -1,5 +1,5 @@
 ﻿#nav-container {
-    $nav-lg: 105px;
+    $nav-lg: 110px;
     $nav-sm: 80px;
 
     $copy-inactive: #7F8387;
@@ -116,6 +116,10 @@
                 display: none;
                 width: 1280px; /* is this supposed to be screen width? */
                 padding: 35px 100px;
+                -webkit-box-shadow: 0px 1px 20px 0px rgba(0,0,0,0.3);
+                -moz-box-shadow: 0px 1px 20px 0px rgba(0,0,0,0.3);
+                box-shadow: 0px 1px 20px 0px rgba(0,0,0,0.3);
+
                 /* Main Sub Heading */
                 & > ul {
                     width: 25%;
