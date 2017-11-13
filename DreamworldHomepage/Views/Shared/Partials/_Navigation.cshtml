@@ -1,10 +1,7 @@
 ﻿@model DreamworldHomepage.ViewModels.NavigationViewModel
 
 <div id="nav-container">
-    <div id="main-navigation">
-        <div id="logo">
-            <img src="~/Content/images/Navigation/Dreamworld_logo.svg" alt="Dreamworld logo" />
-        </div>
+    <div class="container">
         <nav id="main-menu">
             <ul>
                 <li>
@@ -52,7 +49,7 @@
                 <li>
                     <a href="">RIDES</a>
                     <div class="mega-menu-container">
-                        <ul>                            
+                        <ul>
                             <li>
                                 <a href="#">Big 9 Thrill Rides</a>
                                 <ul>
@@ -69,7 +66,7 @@
                             </li>
                         </ul>
 
-                        <ul>                            
+                        <ul>
                             <li>
                                 <a href="#">Kids Rides</a>
                                 <ul>
@@ -167,7 +164,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">Ride Height Limits</a>                                
+                                <a href="#">Ride Height Limits</a>
                             </li>
                             <li>
                                 <a href="#">Ride Maintenance</a>
@@ -182,81 +179,11 @@
                 <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
             </ul>
         </nav>
-        <div id="button-container">
-
-            <div id="button">
-                <a href="#">BUY TICKETS</a>
-            </div>
-        </div>
-    </div>
-    <div id="search-container">
-
     </div>
 </div>
 
 <script>
     $(function () {
 
-        var defaultColor = 'transparent';
-        var imageHeight = '160px';
-
-
-        $('#main-menu').hover(function () {
-            $('#nav-container').css('background-color', '#2A3037');
-            $('#logo img').css({ 'width': '105px' });
-
-        }, function () {
-            // on mouseout, reset the background colour
-            $('#nav-container').css('background-color', defaultColor);
-            $('#logo img').css({ 'width': imageHeight });
-            
-        });
-
-        $(window).scroll(function (event) {
-            if ($(window).scrollTop() > 0) {
-                defaultColor = '#2A3037';
-
-                $('#nav-container').css({
-                    'background-color': defaultColor,
-                    'height': '80px'
-                });
-
-                $('#logo img').css({
-                    'width': '80px'
-                });
-
-                $('#button-container').css({
-                    'height': '80px'
-                });
-
-                $('#main-menu').css({
-                    'height': '80px',
-                    'line-height': '80px'
-                });
-            }
-            else {
-                defaultColor = 'transparent';
-
-                $('#nav-container').css({
-                    'background-color': defaultColor,
-                    'height': '105px'
-                });
-
-                $('#logo img').css({
-                    'width': '160px'
-                });
-
-                $('#button-container').css({
-                    'height': '105px'
-                });
-
-                $('#main-menu').css({
-                    'height': '105px',
-                    'line-height': '105px'
-                });
-
-
-            }
-        });
     });
 </script>

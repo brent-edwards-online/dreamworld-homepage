@@ -1,177 +1,78 @@
 ﻿#nav-container {
-    $nav-lg: 105px;
-    $nav-sm: 80px;
-
-    $copy-inactive: #7F8387;
-    $copy-hover: #2A3037;
     $menu-hover: #202429;
 
-    .height-160 {
-        height: 160px;
-    }
-
-    .height-105 {
-        height: 105px;
-    }
-
-    .height-80 {
-        height: 80px;
+    * {
+        padding: 0;
+        margin: 0;
+        position: relative;
     }
 
     width: 100%;
-    height: $nav-lg;
+    height: 80px;
+    line-height: 80px;
     position: fixed;
-    z-index: 10;
-    transition: all .5s linear;
+    background-color: transparent;
+    background-color: $black;
 
-    & > #main-navigation {
-        width: 1080px;
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
 
-        #button-container {
-            height: $nav-lg;
-            width: 130px;
-            display: flex;
-            align-items: center;
+    & > .container {
+        background-color: purple;
+        margin: 0 auto;
+        padding: 0 15px;
+        height: 100%;
+
+        & > #main-menu {
             position: absolute;
-            right: 0px;
-            top: 0px;
+            right: 130px;
+            color: #ffffff;
+            height: 100%;
 
-            & > #button {
-                text-align: center;
-                background-color: $red;
-                line-height: 45px;
-                width: 130px;
-                border-radius: 5px;
 
-                & > a {
-                    font-size: 14px;
-                    color: #ffffff;
-                    font-weight: bold;
-                    text-decoration: none;
-                }
-            }
-        }
 
-        #logo {
-            & > img {
-
-                width: 160px;
-                transition: all .5s linear;
-            }
-        }
-
-        #main-menu {
-            line-height: $nav-lg;
-            position: absolute;
-            top: 0px;
-            /*left: 160px;*/
-            right: 145px;
-            transition: all .5s linear;
-
-            ul {
+            & > ul {
                 list-style: none;
-                margin-bottom: 0;
-                padding: 0;
+                display: flex;
 
-                & > :hover {
-                }
+
 
                 & > li {
-                    cursor: pointer;
-                    display: inline-block;
-
-                    &:hover {
-
-                        .mega-menu-container {
-                            display: flex;
-
-                            .sub-menu-items {
-                                ul {
-                                    display: block;
-                                }
-                            }
-                        }
-                    }
 
                     & > a {
+                        padding: 0 15px;
                         display: block;
-                        font-size: 14px;
-                        font-weight: bold;
                         color: #ffffff;
                         text-decoration: none;
-                        padding-left: 15px;
-                        padding-right: 15px
                     }
 
                     & > a:hover {
-                        background-color: $menu-hover
+                        background-color: $menu-hover;
                     }
 
-
-
                     .mega-menu-container {
-                        background-color: #ffffff;
-                        position: absolute;
-                        left: -260px;
                         display: none;
-                        width: 1280px; /* is this supposed to be screen width? */
-                        padding: 35px 100px;
-                        /* Main Sub Heading */
+                        position: absolute;
+                        background-color: #ffffff;
+                        width: 1280px;
+                        left: 0;
+
                         & > ul {
-                            width: 25%;
-                            border-left: solid 1px #CECECE;
-                            font-size: 14px;
-                            line-height: 30px;
-                            padding: 0;
 
                             & > li {
-                                padding: 0;
-                                display: block;
+                                height: 15px;
 
-                                & > a:hover {
-                                    background-color: $yellow;
-                                }
-
-                                & > a {
-                                    padding: 0 20px;
-                                    display: block;
-                                    font-size: 16px;
-                                    color: $black;
-                                }
-                                /* Item List*/
-                                ul {
-                                    padding: 0;
-                                    display: block;
-                                    border-left: none;
-                                    width: 100%;
+                                & > ul {
 
                                     & > li {
-                                        padding: 0;
-                                        display: block;
-
-                                        & > :hover {
-                                            background-color: $yellow;
-                                        }
-
-                                        & > a {
-                                            padding: 0 20px;
-                                            display: block;
-                                            font-size: 16px;
-                                            color: $copy-inactive;
-                                            font-weight: 400;
-                                        }
+                                        height: 15px;
                                     }
                                 }
                             }
                         }
                     }
+                }
 
-                    .mega-menu-container:first-child {
-                        display: block;
-                    }
+                & > li:hover .mega-menu-container {
+                    display: flex;
                 }
             }
         }
