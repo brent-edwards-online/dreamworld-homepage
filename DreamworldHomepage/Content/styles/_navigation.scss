@@ -57,7 +57,6 @@
 
         #logo {
             & > img {
-
                 width: 160px;
                 transition: all .5s linear;
             }
@@ -76,14 +75,12 @@
                 margin-bottom: 0;
                 padding: 0;
 
-                & > :hover {
-                }
-
                 & > li {
                     cursor: pointer;
                     display: inline-block;
 
                     &:hover {
+                        background-color: $menu-hover;
 
                         .mega-menu-container {
                             display: flex;
@@ -107,7 +104,7 @@
                     }
 
                     & > a:hover {
-                        background-color: $menu-hover
+                        /*background-color: $menu-hover*/
                     }
 
 
@@ -119,6 +116,7 @@
                         display: none;
                         width: 1280px; /* is this supposed to be screen width? */
                         padding: 35px 100px;
+
                         /* Main Sub Heading */
                         & > ul {
                             width: 25%;
@@ -142,7 +140,7 @@
                                     color: $black;
                                 }
                                 /* Item List*/
-                                ul {
+                                & > ul {
                                     padding: 0;
                                     display: block;
                                     border-left: none;
@@ -152,7 +150,7 @@
                                         padding: 0;
                                         display: block;
 
-                                        & > :hover {
+                                        & > a:hover {
                                             background-color: $yellow;
                                         }
 
