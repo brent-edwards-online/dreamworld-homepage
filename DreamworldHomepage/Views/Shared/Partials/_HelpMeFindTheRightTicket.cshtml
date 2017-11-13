@@ -137,8 +137,10 @@
             @if (!string.IsNullOrEmpty(exclusiveOffer))
             {
                 <div class="ticket-heading">
-                    <h2>Exclusive offer:</h2>
-                    <h3>Buy 3 and get forth pass free</h3>
+                    <div class="ticket-heading__inner">
+                        <h2>Exclusive offer:</h2>
+                        <span class="ticket-heading__text">@exclusiveOffer</span>
+                    </div>
                 </div>
 }
             <div class="ticket-content">
@@ -162,9 +164,11 @@
                     <p class="ticket-description">
                         @description
                     </p>
-                    <p class="ticket-date">
-                        @validUntil
-                    </p>
+                    <div class="ticket-date">
+                        <div class="ticket-date__inner">
+                            @validUntil
+                        </div>
+                    </div>
                     <div class="button">
                         <a href="#">Select</a>
                     </div>
