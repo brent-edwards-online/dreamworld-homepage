@@ -12,6 +12,10 @@
         margin: 0 0 35px;
         text-transform: uppercase;
         display: block;
+
+        @include view-tablet() {
+            margin-bottom: 20px;
+        }
     }
 
     .date {
@@ -28,6 +32,11 @@
         color: #0A0A0A;
         font-size: 16px;
         line-height: 24px;
+
+        @include view-tablet() {
+            font-size: 12px;
+            line-height: 16px;
+        }
     }
 
     .park-updates-slick-container {
@@ -39,7 +48,7 @@
             background-color: #eaeaea;
             position: absolute;
             top: 0;
-            right: -1px;
+            right: 15px;
         }
     }
 
@@ -48,6 +57,14 @@
         background-color: #EAEAEA;
         height: 250px;
         border-right: 2px solid white;
+
+        @include view-tablet() {
+            height: 125px;
+        }
+
+        @include view-mobile() {
+            padding: 0;
+        }
     }
 
     .carousel-nav {
