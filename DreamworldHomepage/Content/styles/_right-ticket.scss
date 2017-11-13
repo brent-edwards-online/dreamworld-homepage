@@ -77,6 +77,16 @@
         align-items: flex-end;
         flex-direction: column;
         justify-content: flex-end;
+        margin: 0 auto;
+
+        @include view-small-desktop() {
+            width: 300px !important;
+            max-width: 300px;
+        }
+
+        @include view-tablet() {
+            display: none;
+        }
     }
 
     .ticket, .package {
@@ -163,10 +173,11 @@
         display: table-cell;
         text-align: center;
         vertical-align: middle;
-        padding-left: 70px;
-        padding-right: 70px;
+        padding-left: 60px;
+        padding-right: 60px;
         font-size: 15px;
         line-height: 21px;
+        width: 100%;
     }
 
     .ticket-info {
