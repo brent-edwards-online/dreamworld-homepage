@@ -13,17 +13,24 @@ $amsi-bold: 'Amsi Pro Bold';
 $dreamworld-icons: 'Dreamworldfont';
 
 // mixins
-@mixin mobile() {
+@mixin view-mobile() {
     @media(max-width: 767px) {
         @content;
     }
 }
 
-@mixin tablet() {
+@mixin view-tablet() {
     @media (min-width: 768px) and (max-width: 991px) {
         @content;
     }
 }
+
+@mixin view-small-desktop() {
+    @media (min-width: 992px) and (max-width: 1199px) {
+        @content;
+    }
+}
+
 
 
 /*
