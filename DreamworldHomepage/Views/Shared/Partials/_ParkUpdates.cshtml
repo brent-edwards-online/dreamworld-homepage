@@ -7,7 +7,7 @@
                 <button type="button" class="left carousel-nav">
                     <span class="icon-icon_arrow-left"></span>
                 </button>
-                
+
                 <button type="button" class="right carousel-nav">
                     <span class="icon-icon_arrow-right"></span>
                 </button>
@@ -36,14 +36,12 @@
 
 <script>
     $(function () {
-        $(".park-updates-slick").slick({
-            infinite: false,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            dots: false,
-            centerPadding: 0,
-            prevArrow: $("#park-updates .left"),
-            nextArrow: $("#park-updates .right")
-        });
+        $(".park-updates-slick")
+            .slick({
+                infinite: false, slidesToShow: 3, slidesToScroll: 1, dots: true,
+                centerPadding: 0,
+                prevArrow: $("#park-updates .left"),
+                nextArrow: $("#park-updates .right")
+            });
     });
 </script>

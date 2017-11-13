@@ -1,6 +1,7 @@
 ﻿#park-updates {
     background-color: #EAEAEA;
     position: relative;
+    padding-top: 30px;
 
     .heading {
         font-family: $amsi;
@@ -34,7 +35,7 @@
             content: ' ';
             display: block;
             height: 100%;
-            width: 2px;
+            width: 3px;
             background-color: #eaeaea;
             position: absolute;
             top: 0;
@@ -43,10 +44,10 @@
     }
 
     .park-updates-slick .slick-slide {
-        padding: 40px 30px;
+        padding: 10px 30px;
         background-color: #EAEAEA;
         height: 250px;
-        border-right: 1px solid white;
+        border-right: 2px solid white;
     }
 
     .carousel-nav {
@@ -82,5 +83,39 @@
 
     .right {
         right: -100px;
+    }
+
+    .slick-slider {
+        margin-bottom: 55px;
+    }
+
+    .slick-dots {
+        bottom: -32px;
+
+        li {
+            height: 10px;
+            width: 10px;
+
+            &.slick-active {
+                button {
+                    background-color: $purple;
+                }
+            }
+
+            button {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: 1px solid $purple;
+
+                &:hover, &:focus {
+                    filter: brightness(0.5);
+                }
+
+                &:before {
+                    content: none;
+                }
+            }
+        }
     }
 }
