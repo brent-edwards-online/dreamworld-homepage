@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+.height-large {
+  height: $sz-lg;
+}
+.height-medium {
+  height: $sz-md;
+}
+.height-small {
+  height: $sz-sm;
+}
+
+div.nav {
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  height: $sz-lg;
+  background-color: $col-menu;
+
+
+  & > nav > ul > li > a {
+    color: #ffffff;
+  }
+
+  & > ul:hover {
+    .nav {
+      background-color: green;
+    }
+  }
+}
+
+
+/* h1 in between divs, even if sub elements*/
+div h1 {
+  color: green;
+}
+
+/* */
+div > h2 {
+  color: pink;
+}
+
+/* */
+div + h3 {
+  color: orange;
+}
+
+/* */
+h2 + p {
+  color: purple;
+  font-weight: bold;
+}
+
+/* */
+i + p {
+  color: red;
+}
+
+ label.btn span {
+                    font-family: 'Arial';
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: #000000;
+                    position: relative;
+                    top: -5px;
+                }
+
+                label input[type="radio"] ~ i.fa.fa-circle-o {
+                    font-weight: 400;
+                    color: #000000;
+                    display: inline;
+                }
+
+                label input[type="radio"] ~ i.fa.fa-dot-circle-o {
+                    display: none;
+                }
+
+                label input[type="radio"]:checked ~ i.fa.fa-circle-o {
+                    display: none;
+                }
+
+                label input[type="radio"]:checked ~ i.fa.fa-dot-circle-o {
+                    color: #000000;
+                    display: inline;
+                }
+
+                label:hover input[type="radio"] ~ i.fa {
+                    color: #000000;
+                }
+
+                label input[type="checkbox"] ~ i.fa.fa-square-o {
+                    color: #000000;
+                    display: inline;
+                }
+
+                label input[type="checkbox"] ~ i.fa.fa-check-square-o {
+                    display: none;
+                }
+
+                label input[type="checkbox"]:checked ~ i.fa.fa-square-o {
+                    display: none;
+                }
+
+                label input[type="checkbox"]:checked ~ i.fa.fa-check-square-o {
+                    color: #000000;
+                    display: inline;
+                }
+
+                label:hover input[type="checkbox"] ~ i.fa {
+                    color: #000000;
+                }
+
+                div[data-toggle="buttons"] label.active {
+                    color: #000000;
+                }
+
+                div[data-toggle="buttons"] label {
+                    display: inline-block;
+                    padding: 0px 12px;
+                    margin-bottom: 0;
+                    font-size: 14px;
+                    font-weight: normal;
+                    line-height: 2em;
+                    text-align: left;
+                    white-space: nowrap;
+                    vertical-align: top;
+                    cursor: pointer;
+                    background-color: none;
+                    border: 0px solid #c8c8c8;
+                    border-radius: 3px;
+                    color: #c8c8c8;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    -o-user-select: none;
+                    user-select: none;
+                }
+
+                div[data-toggle="buttons"] label:hover {
+                    color: #000000;
+                }
+
+                div[data-toggle="buttons"] label:active, div[data-toggle="buttons"] label.active {
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                }
